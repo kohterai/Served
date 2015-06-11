@@ -22,7 +22,9 @@ if (Meteor.isClient) {
   Template.feed.events({
     'click .voteUp': function () {
       Meteor.call("upVote", this);
-      console.log("we are here upvote");
+    },
+    'click .voteDown': function () {
+      Meteor.call("downVote", this);
     }
   });
 }
@@ -31,6 +33,10 @@ if (Meteor.isClient) {
 Meteor.methods({
   upVote: function(food) {
     currentVote = food.rating;
-    console.log(food._id)
+    Foods.update({_id:food._id}, {$set: {"rating": currentVote+1}})
+  },
+  downVote: function(food) {
+    currentVote = food.rating;
+    Foods.update({_id:food._id}, {$set: {"rating": currentVote-1}})
   }
 })
