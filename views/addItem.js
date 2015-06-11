@@ -1,8 +1,3 @@
-//Restaurants collection will store the name and details of the restaurants
-//Foods collection will store data for individual foods
-Restaurants = new Mongo.Collection("festaurants");
-Foods = new Mongo.Collection("food");
-
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
