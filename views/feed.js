@@ -25,11 +25,14 @@ if (Meteor.isClient) {
     },
     'click .voteDown': function () {
       Meteor.call("downVote", this);
+    },
+    'click .filter': function() {
+      console.log("We are right here right now")
     }
   });
 }
 
-
+//Need to add functionality where you can only upvote once
 Meteor.methods({
   upVote: function(food) {
     currentVote = food.rating;

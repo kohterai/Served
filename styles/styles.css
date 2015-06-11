@@ -4,3 +4,11 @@
 body {
 	background-color: rgb(234, 234, 234)
 }
+
+.filter {
+	width: 150px;
+	height: 50px;
+	background-color: blue;
+	display: inline-block;
+	margin: 5px;
+}
