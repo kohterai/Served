@@ -12,3 +12,15 @@ body {
 	display: inline-block;
 	margin: 5px;
 }
+
+.voteUp {
+	width: 30px;
+	height: 30px;
+	background-color: gray;
+}
+
+.voteDown {
+	width: 30px;
+	height: 30px;
+	background-color: gray;
+}

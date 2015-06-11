@@ -2,22 +2,36 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  Template.addItem.helpers({
+    restaurantSelector: function () {
+      ourRestaurant = Restaurants.findOne();
+      //Store the currentRestaurant as a session variable
+      Session.set('currentRestaurant', ourRestaurant)
+      return ourRestaurant.name;
+    },
+    //Find the corresponding food items from the current restaurant
+    item: function() {
+      currentRestaurantID = Session.get('currentRestaurant')._id;
+      // console.log(Foods.find({}).count())
+      // console.log(parseInt(currentRestaurantID,10))
+      // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}).count())
+      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
     }
   });
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
+  Template.addItem.events({
+    'click .voteUp': function () {
+      Meteor.call("upVote", this);
+    },
+    'click .voteDown': function () {
+      Meteor.call("downVote", this);
+    },
+    'click .filter': function() {
+      console.log("We are right here right now")
     }
   });
 }
 
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+//Need to add functionality where you can only upvote once
+Meteor.methods({
+})
