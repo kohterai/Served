@@ -13,7 +13,7 @@ body {
 	margin: 5px;
 }
 
-.ratings {
+.ratings, .addItem_holderInside {
 	display:inline-block;
 	width:10%;
 	padding:0 10px 0 10px;
@@ -27,6 +27,18 @@ body {
 	text-align: center;
 }
 
+.addItem_holder {
+	background-color: #000000;
+}
+
+.addItem_holderInside div {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width:20px;
+	text-align:center;
+}
+
 .textHolder {
 	display:inline-block;
 	width:90%;
@@ -34,12 +46,17 @@ body {
 	padding-left: 5px;
 }
 
-.textHolder a p {
+.textHolder a p, .TextForAddNew {
 	font-size: 25px;
 	white-space: nowrap;
 	overflow: hidden;
   text-overflow: ellipsis;
 	margin-bottom: 0;
+}
+
+.TextForAddNew{
+	padding-top: 10px;
+	
 }
 
 .priceOfItem {
