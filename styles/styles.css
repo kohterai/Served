@@ -23,7 +23,7 @@ body {
 .ratings div {
 	margin-left: auto;
 	margin-right: auto;
-	width: 20px;
+	width: 23px;
 	text-align: center;
 }
 
@@ -42,12 +42,12 @@ body {
 .textHolder {
 	display:inline-block;
 	width:90%;
-	padding-top: 5px;
-	padding-left: 5px;
+	padding-top: 10px;
+	padding-left: 25px;
 }
 
 .textHolder a p, .TextForAddNew {
-	font-size: 25px;
+	font-size: 21px;
 	white-space: nowrap;
 	overflow: hidden;
   text-overflow: ellipsis;
@@ -56,7 +56,7 @@ body {
 
 .TextForAddNew{
 	padding-top: 10px;
-	
+
 }
 
 .priceOfItem {
@@ -72,7 +72,7 @@ body {
 
 
 span.glyphicon-chevron-up, span.glyphicon-chevron-down {
-	font-size: 18px;
+	font-size: 25px;
 	text-align: center;
 }
 
@@ -96,7 +96,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
-	padding-top:12px;
+	padding-top:7px;
 	width:95%;
 	height:90px;
 	margin-left:auto;
