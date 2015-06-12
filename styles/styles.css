@@ -112,3 +112,24 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+.restaurantTitle{
+	cursor: pointer;
+}
+
+#dropDownMenu {
+	display: none;
+	position: absolute;
+	background-color: #E1F5A5;
+	width: 100%;
+	top: -150px;
+	transition: all 0.25s ease-out;
+	z-index: 20
+}
+
+.dropDownDist {
+	display: inline-block;
+}
+
+
+
