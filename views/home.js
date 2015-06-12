@@ -3,6 +3,7 @@
 Restaurants = new Mongo.Collection("restaurants");
 Foods = new Mongo.Collection("food");
 Comments = new Mongo.Collection("comments");
+Votes = new Mongo.Collection("votes");
 
 if (Meteor.isClient) {
   // counter starts at 0

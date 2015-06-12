@@ -79,7 +79,11 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .voteDown, .voteUp {
 	cursor: pointer;
+}
 
+.voteDown.clicked, .voteUp.clicked {
+	cursor: pointer;
+	color: #ffffff;
 }
 
 .container-fluid .row {
