@@ -6,7 +6,12 @@ Foods = new Mongo.Collection("food");
 if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
-
+  Template.home.helpers({
+    restaurantList: function () {
+    	console.log(Restaurants.find({}))
+			return Restaurants.find({});
+	  }
+	})
 }
 
 if (Meteor.isServer) {

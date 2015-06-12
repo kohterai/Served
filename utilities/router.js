@@ -1,5 +1,5 @@
 Router.route('/', function () {
-  this.render('Menu');
+  this.render('home');
 });
 
 Router.route('/login', function () {

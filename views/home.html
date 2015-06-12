@@ -6,9 +6,13 @@
 </body>
 
 
-<template name="Menu">
-	
+<template name="home">
+	<h1>Nearby Restuarants</h1>
+	{{#each restaurantList}}
+		<div>{{name}}</div>
+	{{/each}}
 </template>
+
 
 <template name="Login">
   <h1>Welcome to Meteor!</h1>
