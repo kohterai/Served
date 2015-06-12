@@ -1,5 +1,8 @@
 /* CSS declarations go here */
 
+* {
+	font-family: 'Nunito', sans-serif;
+}
 
 body {
 	background-color: #cccccc;
@@ -182,6 +185,14 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	color: #e9ebe8;
 }
 
+.backButton {
+	font-size: 24px;
+	margin: 18px 0px 0px 18px;
+	color: #e9ebe8;
+	display: inline-block;
+	float:left;
+}
+
 .inline {
 	display: inline-block
 }
@@ -232,7 +243,8 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	padding-bottom:50px;
 }
 
-.add-item-container {
+.add-item-box-inner {
+	height:500px;
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;

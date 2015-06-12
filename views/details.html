@@ -7,43 +7,48 @@
 
 <template name="details">
 <div class="add-item-container">
-	<a href={{backButton}}>BACK</a>
-	<h1>{{name}}</h1>
-	<img src={{image}} />
-
-	<div>
-		Rating: {{rating}}
-	</div> 
-	<div>
-		Price: {{price}}
-	</div>
-	<div>
-		Category: {{category}}
-	</div>
-	
-
-	<div>
-		Description: {{description}}
+	<div class="topHeader">
+		<a href={{backButton}}><span class="backButton glyphicon glyphicon-menu-left"></span></a>
+		<h1 class="restaurantTitle">{{name}}</h1>
 	</div>
 
-	<div class="displayComments">
-		{{#each commentFind}}
-			<div>
-				{{author}}
-			</div>
-			<div>
-				{{comment}}
-			</div>
-		{{/each}}
+	<div class="add-item-box-inner">
+		<img src={{image}} />
+
+		<p>
+			{{rating}}
+		</p>
+		<p>
+			{{price}} AED
+		</p>
+		<div>
+			Category: {{category}}
+		</div>
+
+
+		<div>
+			Description: {{description}}
+		</div>
+
+		<div class="displayComments">
+			{{#each commentFind}}
+				<div>
+					{{author}}
+				</div>
+				<div>
+					{{comment}}
+				</div>
+			{{/each}}
+		</div>
+		{{#if currentUser}}
+			<form class="sendComment">
+				<h4>Submit a Comment</h4>
+				<textarea name="comments"></textarea>
+				<button>Submit Comment</button>
+			</form>
+		{{/if}}
 	</div>
-	{{#if currentUser}}
-		<form class="sendComment">
-			<h4>Submit a Comment</h4>
-			<textarea name="comments"></textarea>
-			<button>Submit Comment</button>
-		</form>
-	{{/if}}
-</div>	
+</div>
 
 
 </template>
