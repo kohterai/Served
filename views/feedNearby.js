@@ -1,16 +1,21 @@
 if (Meteor.isClient) {
   Template.feedNearby.helpers({
   	restaurantList: function () {
-			return Restaurants.find({})
+
+  			var current_restaurant = this.name;
+
+  			return Restaurants.find( {name : {$ne: current_restaurant}});
+
 		},
 		location: function() {
 			Session.set("loc", Geolocation.latLng());
 		},
 		distance: function() {
-			myLocation = Session.get("loc");
+			myLocation = Session.get("loc"); 
 			// console.log(myLocation)
 			return myDistance(myLocation.lat, myLocation.lng, this.latitude, this.longtitude, "K")
-		}
+		},
+
 	});
 
   Template.feedNearby.events({
