@@ -12,3 +12,4 @@ accounts-ui
 aldeed:autoform
 mdg:geolocation
 accounts-password
+reactive-var

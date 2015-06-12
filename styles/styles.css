@@ -2,7 +2,7 @@
 
 
 body {
-	background-color: #cccccc;
+	background-color: #ffffff;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -31,7 +31,7 @@ body {
 }
 
 .addItem_holder {
-	background-color: #cccccc;
+	background-color: rgba(233,235,232,0);
 }
 
 .addItem_holderInside div {
@@ -40,13 +40,13 @@ body {
 	margin-top: 22px;
 	width:20px;
 	text-align:center;
-	color: #eeeeee;
+	color: rgba(209,209,209,1);
 }
 
 .textHolder {
 	display:inline-block;
 	width:90%;
-	padding-top: 10px;
+	padding-top: 11px;
 	padding-left: 25px;
 }
 
@@ -58,13 +58,18 @@ body {
 	margin-bottom: 0;
 }
 
+.nameOfItem {
+	color: #333333;
+}
+
 .TextForAddNew{
 	padding-top: 10px;
-	color: #eeeeee;
+	color: rgba(209,209,209,1);
 }
 
 .priceOfItem {
 	float:right;
+	color: #777777;
 }
 
 .descriptionOfItem {
@@ -72,6 +77,7 @@ body {
 	white-space: nowrap;
 	overflow: hidden;
   text-overflow: ellipsis;
+	color: #aaaaaa;
 }
 
 
@@ -90,8 +96,9 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .container-fluid .row {
-	background-color:#cccccc;
+	background-color:rgba(233,235,232,0.3);
 }
+
 
 .row ul {
 	list-style-type: none;
@@ -109,7 +116,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	height:90px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:2px solid #ffffff;
+	border-bottom:1px solid rgba(209,209,209,1);
 
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
@@ -227,7 +234,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 #halal.filterOn, #price.filterOn, #vegetarian.filterOn {
-	color:#ffffff;
+	color:#ed8943;
 }
 
 .feedList {
@@ -239,9 +246,10 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	height:500px;
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #cccccc;
+	background-color: #E9EBE8;
 
 }
 
@@ -252,22 +260,25 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 #homeScreen {
 	height: 100%;
-	background-color: #ed8943
+	background-color: #ed8943;
 }
 
 #LogoPlate, #LogoText, #LogoSmoke {
-	
-	fill: #FFFFFF
+
+	fill: #FFFFFF;
 }
 
 #SVGLogo {
 	width: 95%;
+<<<<<<< HEAD
 	position: absolute;
 	margin: auto;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+=======
+>>>>>>> 34cca9b018e6a18f4612c1d3411b22ccb5c5ff64
 }
 
 #left-smoke {
@@ -425,4 +436,3 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
     75%  {opacity: 0.4}
     100% {opacity: 0.1}
 }
-
