@@ -29,9 +29,6 @@ if (Meteor.isClient) {
     'click .voteDown': function () {
       Meteor.call("downVote", this);
     },
-    'click .filter': function() {
-      console.log("We are right here right now")
-    }
   });
 
 Template.addItem.events({
@@ -53,7 +50,8 @@ Template.addItem.events({
         price: event.target.price.value,
         category: event.target.category.value,
         halal: $("#halal").is(":checked"),
-        vegetarian: $("#vegetarian").is(":checked")
+        vegetarian: $("#vegetarian").is(":checked"),
+        rating: 0, 
     });
   
     event.target.name.value = " ";
