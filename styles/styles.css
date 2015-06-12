@@ -1,8 +1,9 @@
 /* CSS declarations go here */
 
-
 body {
-	background-color: #cccccc;
+	background-color: #E9EBE8
+
+
 }
 
 .filter {
@@ -13,77 +14,27 @@ body {
 	margin: 5px;
 }
 
-.ratings, .addItem_holderInside {
-	display:inline-block;
-	width:10%;
-	padding:0 10px 0 10px;
-	float:left;
+.ratings {
+
 }
 
-.ratings div {
-	margin-left: auto;
-	margin-right: auto;
-	width: 23px;
-	text-align: center;
+span.glyphicon-chevron-up span.glyphicon-chevron-down {
+	font-size: 100px;
 }
 
-.addItem_holder {
-	background-color: #cccccc;
+.voteUp {
+
+	background-color: gray;
 }
 
-.addItem_holderInside div {
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: 22px;
-	width:20px;
-	text-align:center;
-	color: #eeeeee;
-}
-
-.textHolder {
-	display:inline-block;
-	width:90%;
-	padding-top: 10px;
-	padding-left: 25px;
-}
-
-.nameOfItem, .TextForAddNew {
-	font-size: 21px;
-	white-space: nowrap;
-	overflow: hidden;
-  	text-overflow: ellipsis;
-	margin-bottom: 0;
-}
-
-.TextForAddNew{
-	padding-top: 10px;
-	color: #eeeeee;
-}
-
-.priceOfItem {
-	float:right;
-}
-
-.descriptionOfItem {
-	font-size:12px;
-	white-space: nowrap;
-	overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-span.glyphicon-chevron-up, span.glyphicon-chevron-down {
-	font-size: 25px;
-	text-align: center;
-}
-
-.voteDown, .voteUp {
-	cursor: pointer;
-
+.voteDown {
+	width: 30px;
+	height: 30px;
+	background-color: gray;
 }
 
 .container-fluid .row {
-	background-color:#cccccc;
+	background-color:#E9EBE8;
 }
 
 .row ul {
@@ -97,147 +48,25 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
-	padding-top:7px;
 	width:95%;
-	height:90px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:2px solid #ffffff;
+	border-bottom:5px solid #E9EBE8;
 
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
-}
-
-.input-field {
-	display:inline-block;
-	width:100%;
-	padding-top: 5px;
 }
 
 .center-block {
-	display: block;
-	text-align: center;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
+  display: block;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.submit-button {
-	margin-bottom: 6px;
-}
-
-.submit-box {
-	width:100%;
-	text-align: center;
-	display:inline-block;
-}
-
-.check-box {
-	display:inline-block;
-	float: left;
-}
-
-.topHeader{
-	cursor: pointer;
-	background-color: #ed8943;
-	z-index: 20;
-	position: absolute;
-	width: 100%;
-	height:62px;
-	box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.4);
-}
-
-.restaurantTitle {
-	width:90%;
-	padding-right: 10px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	float:left;
-	display:inline-block;
-	font-family: 'Nunito', sans-serif;
-	font-size: 28px;
-	padding-left: 20px;
-	margin-top: 17px;
-	color: #e9ebe8;
-}
-
-#dropDownMenu {
-	position: absolute;
-	background-color: #dddddd;
-	width: 100%;
-	top: -500px;
-	transition: all 0.4s ease-out;
-	z-index: 10;
-}
+p {
+    text-align: center;
+    color: #ED6027;
+		font-family: 'Nunito', sans-serif;
 
 
-#dropDownGlyph {
-	font-size: 24px;
-	transition: all 0.25s ease-out;
-	margin-top: 18px;
-	color: #e9ebe8;
-}
-
-.inline {
-	display: inline-block
-}
-
-.bottomBar {
-	width:100%;
-	height:62px;
-	z-index:100;
-	background-color: #eeeeee;
-	position:fixed;
-	bottom:0;
-	border-top:1px solid #dddddd;
-	padding-top: 12px;
-	box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.4);
-}
-
-#buffer1 {
-	width:10%;
-	float:left;
-	display: inline-block;
-	height:5px;
-}
-
-#halal, #price, #vegetarian {
-	display:inline-block;
-	float:left;
-	width:26.5%;
-	color:#333333;
-	text-align:center;
-	cursor: pointer;
-}
-
-#halal span, #price span, #vegetarian span {
-	font-size: 27px;
-}
-
-#halal p, #price p, #vegetarian p {
-	font-size: 10px;
-	letter-spacing: 0.5px;
-}
-
-#halal.filterOn, #price.filterOn, #vegetarian.filterOn {
-	color:#ffffff;
-}
-
-.feedList {
-	margin-top: 65px;
-	padding-bottom:58px;
-}
-
-.add-item-container {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #cccccc;
-
-}
-
-.details-description {
-	margin-bottom:5px;
-	margin-top:5px;
 }
