@@ -1,4 +1,5 @@
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
@@ -44,11 +45,13 @@
 	<li>
 		<div class="ratings">
 			<div class="voteUp"><span class="glyphicon glyphicon-chevron-up"></span></div>
-			{{rating}}
+			<div>{{rating}}</div>
 			<div class="voteDown"><span class="glyphicon glyphicon-chevron-down"></span></div>
 		</div>
 		<div class="textHolder">
-			<a href={{detailedItem}}>{{name}}</a>
+			<a href={{detailedItem}}>
+				<p>{{name}}</p>
+			</a>
 			<p class="priceOfItem">{{price}} AED</p>
 			<p class="descriptionOfItem">{{description}}</p>
 		</div>
