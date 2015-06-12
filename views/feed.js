@@ -21,7 +21,6 @@ if (Meteor.isClient) {
       console.log(this)
       //we want to return /restaurantName/addmenu
       return this.name +"/addItem"
-
     }
   });
 
@@ -36,6 +35,14 @@ if (Meteor.isClient) {
       console.log("We are right here right now")
     }
   });
+
+  Template.food.helpers({
+    detailedItem: function() {
+      restaurantName = Session.get("currentRestaurant").name
+      //this is the name of the food
+      return "/" + restaurantName + "/food/" + this.name 
+    }
+  })
 }
 
 //Need to add functionality where you can only upvote once

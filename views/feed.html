@@ -8,7 +8,7 @@
 	</ul>
 
 	<footer>
-		<div class="filter">
+		<div id="topVoteFilter" class="filter">
 			All
 		</div>
 		<div class="filter">
@@ -22,7 +22,7 @@
 
 <template name="food">
 	<li>
-		<a href={{pathFor route='post.show'}}>{{name}}</a>
+		<a href={{detailedItem}}>{{name}}</a>
 		<div class="ratings">
 			<div class="voteUp">VOTEUP</div>
 			<div class="voteDown">VOTEDOWN</div>

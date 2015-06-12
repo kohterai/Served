@@ -29,11 +29,27 @@ Router.route('/:_id/addItem', function () {
 });
 
 
+Router.route('/:_id/food/:foodName', function () {
+  //_id assigned to restaurant name
+  //foodName assigned as food name
+  var names = this.params;
+	// this.next()
+  //find the restaurant first
+  ourRestaurant = Restaurants.findOne({"name": names._id})
+  restID = parseInt(ourRestaurant._id, 10)
+  //now find the menu item inside
+  currentFood = Foods.findOne({restaurantID: restID, name: names.foodName})
+  
+  Session.set('currentRestaurant', ourRestaurant)
+  Session.set('currentFood', currentFood)
 
-
-Router.route('/feed/restaurant/detail', function () {
-	this.next()
   this.render('details');
 	}, {
-		name: 'post.show'
-});
+    data: function () {
+      //console.log(Restaurants.findOne({name: this.params._id}))
+      console.log(currentFood)
+      console.log("hereere")
+      return currentFood
+    }
+  }
+);
