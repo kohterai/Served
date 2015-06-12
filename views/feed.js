@@ -15,6 +15,13 @@ if (Meteor.isClient) {
       // console.log(parseInt(currentRestaurantID,10))
       // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}).count())
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
+    },
+    addItem: function() {
+      //this is the restaurant right now
+      console.log(this)
+      //we want to return /restaurantName/addmenu
+      return this.name +"/addItem"
+
     }
   });
 

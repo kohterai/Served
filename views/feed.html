@@ -1,6 +1,6 @@
 <template name="feed">
 	<h1>{{restaurantSelector}}</h1>
-	<a href="/addItem">+ add menu item</a>
+	<a href={{addItem}}>+ add menu item</a>
 	<ul>
 		{{#each item}}
 			{{> food}}
