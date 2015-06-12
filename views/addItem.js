@@ -54,13 +54,16 @@ Template.addItem.events({
         description: event.target.description.value,
         price: event.target.price.value,
         category: event.target.category.value,
-        filter: event.target.filter.value,
+        halal: $("#halal").is(":checked"),
+        vegetarian: $("#vegetarian").is(":checked")
     });
   
     event.target.name.value = " ";
     event.target.description.value = " ";
     event.target.price.value = " ";
-    event.target.filter.value = " ";
+    event.target.category.value = " "; 
+    event.target.halal.value = " ";
+    event.target.vegetarian.value = " ";
 
     return false;
 
