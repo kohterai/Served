@@ -55,16 +55,20 @@ menuList = [{
     rating: 25,
     price: 20,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
 
     {
     restaurantID: 1,
-    name: "PIna Colada",
+    name: "Pina Colada",
     rating: 15,
     price: 20,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -74,6 +78,8 @@ menuList = [{
     price: 25,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
 
@@ -84,6 +90,8 @@ menuList = [{
     price: 30,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
 
@@ -94,6 +102,8 @@ menuList = [{
     price: 15,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -103,6 +113,8 @@ menuList = [{
     price: 39,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
 
@@ -112,7 +124,9 @@ menuList = [{
     rating: 5,
     price: 19,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -120,7 +134,9 @@ menuList = [{
     rating: 14,
     price: 17,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -128,7 +144,9 @@ menuList = [{
     rating: 13,
     price: 17,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -136,7 +154,9 @@ menuList = [{
     rating: 25,
     price: 13,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -144,7 +164,9 @@ menuList = [{
     rating: 19,
     price: 11,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -152,7 +174,9 @@ menuList = [{
     rating: -10,
     price: 18,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
 
     }, 
     {
@@ -161,7 +185,9 @@ menuList = [{
     rating: 30,
     price: 18,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -170,7 +196,9 @@ menuList = [{
     rating: 20,
     price: 18,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -179,7 +207,9 @@ menuList = [{
     rating: 40,
     price: 17,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -188,7 +218,9 @@ menuList = [{
     rating: 50,
     price: 16,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -197,7 +229,9 @@ menuList = [{
     rating: 5,
     price: 10,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -205,7 +239,9 @@ menuList = [{
     rating: 25,
     price: 10,
     category: "salad",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -214,7 +250,9 @@ menuList = [{
     rating: 25,
     price: 14,
     category: "shorba",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
 
     {
@@ -223,7 +261,9 @@ menuList = [{
     rating: 45,
     price: 14,
     category: "shorba",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -231,7 +271,9 @@ menuList = [{
     rating: 7,
     price: 13,
     category: "shorba",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -239,7 +281,9 @@ menuList = [{
     rating: 14,
     price: 13,
     category: "shorba",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
 
     }, 
     {
@@ -248,7 +292,9 @@ menuList = [{
     rating: 44,
     price: 27,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     { 
     restaurantID: 1,
@@ -256,7 +302,9 @@ menuList = [{
     rating: 57,
     price: 24,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     { 
     restaurantID: 1,
@@ -264,7 +312,9 @@ menuList = [{
     rating: 64,
     price: 32,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     { 
     restaurantID: 1,
@@ -272,7 +322,9 @@ menuList = [{
     rating: 38,
     price: 28,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -280,7 +332,9 @@ menuList = [{
     rating: 37,
     price: 32,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 1,
@@ -288,7 +342,9 @@ menuList = [{
     rating: 53,
     price: 31,
     category: "main dish",
-    filter: ["kabab", "chicken"]
+    filter: ["kabab", "chicken"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
 
     }, 
    
@@ -299,7 +355,9 @@ menuList = [{
     rating: 54,
     price: 86,
     category: "main dish",
-    filter: ["kabab", "sea food"]
+    filter: ["kabab", "sea food"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -307,7 +365,9 @@ menuList = [{
     rating: 26,
     price: 63,
     category: "main dish",
-    filter: ["kabab", "sea food"]
+    filter: ["kabab", "sea food"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -315,7 +375,9 @@ menuList = [{
     rating: 23,
     price: 42,
     category: "main dish",
-    filter: ["kabab", "sea food"]
+    filter: ["kabab", "sea food"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -323,7 +385,9 @@ menuList = [{
     rating: 37,
     price: 28,
     category: "main dish",
-    filter: ["kabab", "vegetarian"]
+    filter: ["kabab", "vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -331,7 +395,9 @@ menuList = [{
     rating: 56,
     price: 28,
     category: "main dish",
-    filter: ["kabab", "vegetarian"]
+    filter: ["kabab", "vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -339,7 +405,9 @@ menuList = [{
     rating: 28,
     price: 28,
     category: "main dish",
-    filter: ["kabab", "vegetarian"]
+    filter: ["kabab", "vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
     {
     restaurantID: 1,
@@ -347,7 +415,9 @@ menuList = [{
     rating: 25,
     price: 25,
     category: "main dish",
-    filter: ["kabab", "vegetarian"]
+    filter: ["kabab", "vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },
 
     
@@ -358,7 +428,9 @@ menuList = [{
     rating: 15,
     price: 8,
     category: "appetizer",
-    filter: ["appetizer"]
+    filter: ["appetizer"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -366,7 +438,9 @@ menuList = [{
     rating: 25, 
     price: 7,
     category: "appetizer",
-    filter: ["appetizer"]
+    filter: ["appetizer"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -374,7 +448,9 @@ menuList = [{
     rating: 43,
     price: 14,
     category: "appetizer",
-    filter: ["appetizer"]
+    filter: ["appetizer"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -382,7 +458,9 @@ menuList = [{
     rating: 14,
     price: 11,
     category: "appetizer",
-    filter: ["appetizer"]
+    filter: ["appetizer"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -390,7 +468,9 @@ menuList = [{
     rating: 27,
     price: 11,
     category: "appetizer",
-    filter: ["appetizer"]
+    filter: ["appetizer"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -398,7 +478,9 @@ menuList = [{
     rating: 27,
     price: 15,
     category: "main dish",
-    filter: ["rice"]
+    filter: ["rice"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -406,7 +488,9 @@ menuList = [{
     rating: 38,
     price: 15,
     category: "main dish",
-    filter: ["rice"]
+    filter: ["rice"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -414,7 +498,9 @@ menuList = [{
     rating: 15,
     price: 15,
     category: "main dish",
-    filter: ["rice"]
+    filter: ["rice"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -422,7 +508,9 @@ menuList = [{
     rating: 49,
     price: 22,
     category: "main dish",
-    filter: ["kabab"]
+    filter: ["kabab"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -430,7 +518,9 @@ menuList = [{
     rating: 12,
     price: 20,
     category: "main dish",
-    filter: ["kabab"]
+    filter: ["kabab"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -438,7 +528,9 @@ menuList = [{
     rating: 38,
     price: 19,
     category: "main dish",
-    filter: ["kabab"]
+    filter: ["kabab"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -447,6 +539,8 @@ menuList = [{
     price: 20,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -456,6 +550,8 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -465,6 +561,8 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -474,6 +572,8 @@ menuList = [{
     price: 20,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -483,6 +583,8 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -491,7 +593,9 @@ menuList = [{
     rating: 19,
     price: 11,
     category: "soup",
-    filter: ["soup"]
+    filter: ["soup"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -499,7 +603,9 @@ menuList = [{
     rating: 49,
     price: 11,
     category: "soup",
-    filter: ["soup"]
+    filter: ["soup"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -507,7 +613,9 @@ menuList = [{
     rating: 38,
     price: 10,
     category: "soup",
-    filter: ["soup"]
+    filter: ["soup"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -515,7 +623,9 @@ menuList = [{
     rating: 29,
     price: 10,
     category: "soup",
-    filter: ["soup"]
+    filter: ["soup"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -523,7 +633,9 @@ menuList = [{
     rating: 36,
     price: 10,
     category: "soup",
-    filter: ["soup"]
+    filter: ["soup"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 2,
@@ -532,6 +644,8 @@ menuList = [{
     price: 35,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -541,6 +655,8 @@ menuList = [{
     price: 25,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -550,6 +666,8 @@ menuList = [{
     price: 30,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -559,6 +677,8 @@ menuList = [{
     price: 15,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
 
@@ -568,7 +688,9 @@ menuList = [{
     rating: 39,
     price: 40,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -576,7 +698,9 @@ menuList = [{
     rating: 59,
     price: 70,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -584,7 +708,9 @@ menuList = [{
     rating: 19,
     price: 40,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -592,7 +718,9 @@ menuList = [{
     rating: -10,
     price: 40,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -600,7 +728,9 @@ menuList = [{
     rating: -15,
     price: 18,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -608,7 +738,9 @@ menuList = [{
     rating: 39,
     price: 18,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -616,7 +748,9 @@ menuList = [{
     rating: -20,
     price: 12,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -625,6 +759,8 @@ menuList = [{
     price: 75,
     category: "main",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -633,7 +769,9 @@ menuList = [{
     rating: 10,
     price: 105,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -642,6 +780,8 @@ menuList = [{
     price: 78,
     category: "main",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -651,6 +791,8 @@ menuList = [{
     price: 25,
     category: "main",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -659,7 +801,9 @@ menuList = [{
     rating: 49,
     price: 26,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -667,7 +811,9 @@ menuList = [{
     rating: 2,
     price: 6,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -675,7 +821,9 @@ menuList = [{
     rating: 19,
     price: 9,
     category: "main",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -683,7 +831,9 @@ menuList = [{
     rating: 15,
     price: 12,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -691,7 +841,9 @@ menuList = [{
     rating: 49,
     price: 26,
     category: "desert",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 3,
@@ -700,6 +852,8 @@ menuList = [{
     price: 26,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -709,6 +863,8 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -718,6 +874,8 @@ menuList = [{
     price: 39,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -727,6 +885,8 @@ menuList = [{
     price: 17,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
 
@@ -736,7 +896,9 @@ menuList = [{
     rating: 37,
     price: 15,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -744,7 +906,9 @@ menuList = [{
     rating: 5,
     price: 15,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -753,6 +917,8 @@ menuList = [{
     price: 20,
     category: "drink",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -761,7 +927,9 @@ menuList = [{
     rating: 25,
     price: 40,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -769,7 +937,9 @@ menuList = [{
     rating: 15,
     price: 33,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -778,6 +948,8 @@ menuList = [{
     price: 38,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     },     {
     restaurantID: 4,
@@ -785,21 +957,27 @@ menuList = [{
     rating: 39,
     price: 40, 
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },     {
     restaurantID: 4,
     name: "Boneless Chicken",
     rating: 15,
     price: 19,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },     {
     restaurantID: 4,
     name: "Lamp Chop",
     rating: 17,
     price: 45,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     },     
     {
     restaurantID: 4,
@@ -808,6 +986,8 @@ menuList = [{
     price: 28,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -816,7 +996,9 @@ menuList = [{
     rating: 15,
     price: 12,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -824,7 +1006,9 @@ menuList = [{
     rating: 26,
     price: 12,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -832,7 +1016,9 @@ menuList = [{
     rating: 29,
     price: 16,
     category: "drink",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 4,
@@ -841,6 +1027,8 @@ menuList = [{
     price: 19,
     category: "drink",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
 
@@ -850,7 +1038,9 @@ menuList = [{
     rating: 27,
     price: 58,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -858,7 +1048,9 @@ menuList = [{
     rating: 17,
     price: 85,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5 ,
@@ -867,6 +1059,8 @@ menuList = [{
     price: 85,
     category: "appetizer",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -875,7 +1069,9 @@ menuList = [{
     rating: 30,
     price: 68,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -883,7 +1079,9 @@ menuList = [{
     rating: -15,
     price: 68,
     category: "appetizer",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -891,7 +1089,9 @@ menuList = [{
     rating: 39,
     price: 280,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -900,6 +1100,8 @@ menuList = [{
     price: 140,
     category: "main dish",
     filter: ["halal"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     halal: true
     }, 
     {
@@ -908,7 +1110,9 @@ menuList = [{
     rating: 39,
     price: 200,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -916,7 +1120,9 @@ menuList = [{
     rating: 46,
     price: 95,
     category: "main dish",
-    filter: []
+    filter: [],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
     }, 
     {
     restaurantID: 5,
@@ -925,6 +1131,8 @@ menuList = [{
     price: 35,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -934,6 +1142,8 @@ menuList = [{
     price: 25,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
     {
@@ -943,6 +1153,8 @@ menuList = [{
     price: 95,
     category: "main dish",
     filter: ["vegetarian"],
+    description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
+    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
 
