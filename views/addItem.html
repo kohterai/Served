@@ -1,3 +1,42 @@
 <template name="addItem">
   <h1>We are now at the Add Item screen!</h1>
+
+  <form class="new-food">
+
+    Food Name: 
+    <br>
+    <input type="text" name="name" />
+    <br>
+
+    Description: 
+    <br>  
+    <input type="text" name="description" />
+    <br> 
+
+    Price:
+    <br>
+    <input type="text" name="price" />
+    <br> 
+
+    Category:
+    <br>
+    <select>
+      <option value="appetizer">appetizer</option>
+      <option value="main dish">main dish</option>
+      <option value="drink">drink</option>
+      <option value="desert">desert</option>
+    </select>
+    <br>
+
+    Filter: 
+    <br>
+    <input type="text" name="filter" placeholder="vegetarian, halal, spicy, etc." />
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+
+  </form>
 </template>
+

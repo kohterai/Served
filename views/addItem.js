@@ -30,8 +30,28 @@ if (Meteor.isClient) {
       console.log("We are right here right now")
     }
   });
+
+Template.addItem.events({
+    "submit .new-food": function(even, template) {
+    event.preventDefault();
+
+    "Need to add auto-complete here"
+    "Add the new food into the food_list"
+    "Need to split filter into different word and put into list"
+
+    food_list.insert({
+        food_name: template.find(".name").value,
+        description: template.find(".description").value,
+        price: template.find(".price").value,
+        category: template.find(".category").value,
+        filter: template.find(".filter").value,
+    });
+    }
+});
+
 }
 
 //Need to add functionality where you can only upvote once
 Meteor.methods({
 })
+
