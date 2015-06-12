@@ -26,5 +26,14 @@ body {
 }
 
 .container-fluid .row {
-	background:"#222222";
+	background-color:#cccccc;
+}
+
+.row ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.row ul li {
+	
 }
