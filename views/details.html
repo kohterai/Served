@@ -1,23 +1,49 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+</head>
+
 <template name="details">
+<div class="add-item-container">
 	<a href={{backButton}}>BACK</a>
 	<h1>{{name}}</h1>
 	<img src={{image}} />
-	<div>
-	</div>
-	<div>
-		{{rating}}
-	</div>
-	<div>
-		{{price}}
-	</div>
-	<div>
-		{{category}}
-	</div>
-	<div>
-		{{description}}
-	</div>
-	<div>
-		<!-- {{#each comment}} -->
 
+	<div>
+		Rating: {{rating}}
+	</div> 
+	<div>
+		Price: {{price}}
 	</div>
+	<div>
+		Category: {{category}}
+	</div>
+	
+
+	<div>
+		Description: {{description}}
+	</div>
+
+	<div class="displayComments">
+		{{#each commentFind}}
+			<div>
+				{{author}}
+			</div>
+			<div>
+				{{comment}}
+			</div>
+		{{/each}}
+	</div>
+	{{#if currentUser}}
+		<form class="sendComment">
+			<h4>Submit a Comment</h4>
+			<textarea name="comments"></textarea>
+			<button>Submit Comment</button>
+		</form>
+	{{/if}}
+</div>	
+
+
 </template>

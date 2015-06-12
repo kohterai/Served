@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template name="addItem">
 
   <a href={{backButton}}>BACK</a>
@@ -13,60 +14,65 @@
         id="inputFoodName" placeholder="Food Name">
       </div>
       <br>
+=======
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+</head>
+>>>>>>> 5214bb33c43909395396dae40b4f4a869688e199
 
-      <div class="form-group">
-        <div class="col-xs-5">
-          <input name="price" class="form-control"
-          id="inputPrice" placeholder="Price">
+<template name="addItem">
+<div class="add-item-container">
+    <a href={{backButton}}>BACK</a>
+    <form class="new-food">
+
+      <h1>
+        <p class="text-center">Add New Menu Item </p>
+      </h1>
+      <div class="center-block">
+
+        <div class="input-field">
+          <input name="name" class="form-control"
+          id="inputFoodName" placeholder="Food Name">
         </div>
+        <br>
+
+        <div class="input-field">
+          <div>
+            <input name="price" class="form-control"
+            id="inputPrice" placeholder="Price">
+          </div>
+        </div>
+        <br>
+
+        <div class="input-field">
+          <textarea name="description" placeholder="Description" id="inputDescription" class="form-control" rows="3"></textarea>
+        </div>
+        <br>
+
+        <div class="check-box"> 
+            <input type="checkbox" name="vegetarian"> Vegetarian
+         </div>
+
+         <br>
+         <br>
+
+         <div class="check-box">
+            <input type="checkbox" name="halal"> Halal <br>
+          </div>
+        <br>
+        <br>
+        <div class="input-field">
+          <div class="submit-">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+
       </div>
-      <br>
-
-      <div class="form-group">
-        <input name="description" class="form-control"
-        id="inputDescription" placeholder="Description">
-        <textarea class="form-control" rows="3"></textarea>
-      </div>
-      <br>
-
-    </div>
-
-    <div class="checkbox">
-       <label>
-         <input type="checkbox" id = "Vegetarian" name="vegetarian"   > vegetarian
-       </label>
-     </div>
-
-     <div class="checkbox">
-        <label>
-          <input type="checkbox" id = "Vegetarian" name="halal"  > halal <br>
-        </label>
-      </div>
-
-     <!--
-    Vegetarian:
-    <br>
-
-    <input type="checkbox" id = "vegetarian" name="vegetarian"   > vegetarian <br>
-    <input type="checkbox" id = "vegetarian" name="halal"  > halal <br>
-  -->
-<!--
-    Category:
-    <br>
-    <select name="category">
-      <option value="appetizer">appetizer</option>
-      <option value="main dish">main dish</option>
-      <option value="drink">drink</option>
-      <option value="desert">desert</option>
-    </select>
-    <br>
-  -->
 
 
-    <br>
-    <br>
-    <div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </form>
+    </form>
+</div>
 </template>

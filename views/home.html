@@ -7,18 +7,19 @@
 
 
 <template name="home">
-	<h1>Nearby Restuarants</h1>
-	{{#each restaurantList}}
-		<div>
-			<a href="/{{name}}">{{name}}</a>
-		</div>
-	{{/each}}
+	<!-- {{#if currentUser}} -->
+		<h1>Nearby Restuarants</h1>
+		{{#each restaurantList}}
+			<div>
+				<a href="/{{name}}">{{name}}</a>
+			</div>
+		{{/each}}
+	<!-- {{else}} -->
+		{{> Login}}
+	<!-- {{/if}} -->
 </template>
 
-
 <template name="Login">
-  <h1>Welcome to Meteor!</h1>
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-  {{> loginButtons}}
+	<h1>Welcome to Served!</h1>
+	{{> loginButtons}}
 </template>

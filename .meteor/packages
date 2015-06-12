@@ -9,5 +9,6 @@ autopublish
 insecure
 iron:router
 accounts-ui
-accounts-password
 aldeed:autoform
+accounts-google
+mdg:geolocation
