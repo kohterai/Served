@@ -33,41 +33,8 @@ if (Meteor.isClient) {
       console.log("We are right here right now")
     }
   });
-
-Template.addItem.events({
-    "submit .new-food": function(event, form) {
-    event.preventDefault();
-
-    "Add the new food into the food_list"
-
-    "Need to add auto-complete here"
-    "Need to split filter into different word and put into list"
-
-    currentRestaurantID = Session.get('currentRestaurant')._id;
-
-    Foods.insert({
-        // restaurantID: Session.get('currentRestaurant')._id,
-        restaurantID: parseInt(currentRestaurantID,10),
-        name: event.target.name.value,
-        description: event.target.description.value,
-        price: event.target.price.value,
-        category: event.target.category.value,
-        filter: event.target.filter.value,
-    });
-  
-    event.target.name.value = " ";
-    event.target.description.value = " ";
-    event.target.price.value = " ";
-    event.target.filter.value = " ";
-
-    return false;
-
-    }
-});
-
 }
 
 //Need to add functionality where you can only upvote once
 Meteor.methods({
 })
-
