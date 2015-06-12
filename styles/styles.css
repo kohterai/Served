@@ -50,7 +50,7 @@ body {
 	font-size: 25px;
 	white-space: nowrap;
 	overflow: hidden;
-  text-overflow: ellipsis;
+  	text-overflow: ellipsis;
 	margin-bottom: 0;
 }
 
@@ -67,7 +67,7 @@ body {
 	font-size:12px;
 	white-space: nowrap;
 	overflow: hidden;
-  text-overflow: ellipsis;
+  	text-overflow: ellipsis;
 }
 
 
@@ -107,8 +107,31 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	letter-spacing: 0.5px;
 }
 
+.input-field {
+	display:inline-block;
+	width:100%;
+	padding-top: 5px;
+}
+
 .center-block {
-  display: block;
-  margin-left: 8%;
-  margin-right: 8%;
+	display: block;
+	text-align: center;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+.submit-button {
+	text-align: center; 
+	margin-bottom: 6px; 
+}
+
+.submit-box {
+	width:100%;
+	text-align: center;
+	display:inline-block;
+}
+
+.check-box {
+	display:inline-block;
+	float: left;
 }
