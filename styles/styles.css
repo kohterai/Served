@@ -1,6 +1,5 @@
 /* CSS declarations go here */
 
-
 body {
 	background-color: rgb(234, 234, 234)
 }
@@ -26,5 +25,21 @@ body {
 }
 
 .container-fluid .row {
-	background:"#222222";
+	background-color:#cccccc;
+}
+
+.row ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.row ul li {
+	background-color:#aaaaaa;
+	margin-bottom:1px;
+}
+
+.row ul li, .row a{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
 }
