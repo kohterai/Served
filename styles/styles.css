@@ -2,7 +2,10 @@
 
 
 body {
-	background-color: #ED8943;
+	background-color: #ED6027;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .filter {
@@ -232,7 +235,8 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	padding-bottom:50px;
 }
 
-.add-item-container {
+.add-item-box-inner {
+	height:500px;
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: 15px;
@@ -245,6 +249,24 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .details-description {
 	margin-bottom:5px;
 	margin-top:5px;
+}
+
+#homeScreen {
+	height: 100%;
+	background-color: #ed8943
+}
+
+#LogoPlate, #LogoText, #LogoSmoke {
+
+	fill: #FFFFFF
+}
+
+#SVGLogo {
+	width: 95%
+}
+
+#left-smoke {
+
 }
 
 p{
