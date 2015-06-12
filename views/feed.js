@@ -80,7 +80,8 @@ if (Meteor.isClient) {
         Meteor.call("upVote", this);
       }
     },
-    'click .voteDown': function () {
+    'click .voteDown': function (event) {
+      console.log(event.currentTarget)
       if ($(".voteDown").hasClass("clicked")){
         return;
       } else {
