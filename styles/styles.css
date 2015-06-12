@@ -2,7 +2,7 @@
 
 
 body {
-	background-color: #cccccc;
+	background-color: #ED8943;
 }
 
 .filter {
@@ -28,7 +28,7 @@ body {
 }
 
 .addItem_holder {
-	background-color: #cccccc;
+	background-color: #E9EBE8;
 }
 
 .addItem_holderInside div {
@@ -37,7 +37,7 @@ body {
 	margin-top: 22px;
 	width:20px;
 	text-align:center;
-	color: #eeeeee;
+	color: #E9EBE8;
 }
 
 .textHolder {
@@ -235,13 +235,20 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .add-item-container {
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #cccccc;
+	background-color: #E9EBE8;
 
 }
 
 .details-description {
 	margin-bottom:5px;
 	margin-top:5px;
+}
+
+p{
+	color: #ED6027;
+	font-family: 'Nunito', sans-serif;
+
 }
