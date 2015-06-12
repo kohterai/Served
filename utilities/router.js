@@ -10,8 +10,7 @@ Router.route('/addItem', function () {
   this.render('addItem');
 });
 
-
-Router.route('/feed/:_id', function () {
+Router.route('/:_id', function () {
   this.render('feed', {
     data: function () {
     	// console.log(Restaurants.findOne({name: this.params._id}))
@@ -20,8 +19,9 @@ Router.route('/feed/:_id', function () {
   });
 });
 
-// Router.route('/feed/:_id/:foodName', function () {
-//   this.render('details', {
-//   	name: 'item.name'
-//   });
-// });
+Router.route('/feed/restaurant/detail', function () {
+	this.next()
+  this.render('details');
+	}, {
+		name: 'post.show'
+});

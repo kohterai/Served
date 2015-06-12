@@ -22,7 +22,7 @@
 
 <template name="food">
 	<li>
-		{{name}}
+		<a href={{pathFor route='post.show'}}>{{name}}</a>
 		<div class="ratings">
 			<div class="voteUp">VOTEUP</div>
 			<div class="voteDown">VOTEDOWN</div>

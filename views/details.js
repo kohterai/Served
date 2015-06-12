@@ -2,7 +2,7 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
-  Template.addItem.helpers({
+  Template.details.helpers({
     restaurantSelector: function () {
       ourRestaurant = Restaurants.findOne();
       //Store the currentRestaurant as a session variable
@@ -18,11 +18,12 @@ if (Meteor.isClient) {
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
     },
     test:function() {
-      console.log(Session.get("currentRestaurant"))
+      console.log("we are here")
+      console.log(test)
     }
   });
 
-  Template.addItem.events({
+  Template.details.events({
     'click .voteUp': function () {
       Meteor.call("upVote", this);
     },
