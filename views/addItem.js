@@ -31,9 +31,6 @@ if (Meteor.isClient) {
     'click .voteDown': function () {
       Meteor.call("downVote", this);
     },
-    'click #topVoteFilter': function() {
-      console.log("We are right here right now")
-    }
   });
 
 Template.addItem.events({

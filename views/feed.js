@@ -67,10 +67,10 @@ Meteor.methods({
 
     var current_class = div_tag.className;
 
-    if (current_class == true) {
-      div_tag.className = false; 
+    if (current_class == "true") {
+      div_tag.className = "false"; 
     } else {
-      div_tag.className = true;
+      div_tag.className = "true";
     }
 
   },
@@ -81,10 +81,10 @@ Meteor.methods({
 
     var current_class = div_tag.className;
 
-    if (current_class == true) {
-      div_tag.className = false; 
+    if (current_class == "true") {
+      div_tag.className = "false"; 
     } else {
-      div_tag.className = true;
+      div_tag.className = "true";
     }
   },
 
@@ -94,22 +94,22 @@ Meteor.methods({
     halal_div_class = document.getElementById("halal").className
     vegetarian_div_class = document.getElementById("vegetarian").className
 
-    if ((halal_div_class == false) & (vegetarian_div_class == false)) {
+    if ((halal_div_class == "false") & (vegetarian_div_class == "false")) {
       //display all food 
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
     };
 
-    if ((halal_div_class == true) & (vegetarian_div_class == false)) {
+    if ((halal_div_class == "true") & (vegetarian_div_class == "false")) {
       //display only halal food 
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"halal": true}, {sort: {rating: -1 }})
     };
 
-    if ((halal_div_class == false) & (vegetarian_div_class == true)) {
+    if ((halal_div_class == "false") & (vegetarian_div_class == "true")) {
       //display only vegetarian food 
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"vegetarian" : true}, {sort: {rating: -1 }})
     };
 
-    if ((halal_div_class == true) & (vegetarian_div_class == true)) {
+    if ((halal_div_class == "true") & (vegetarian_div_class == "true")) {
       //display both halal and vegetarian food 
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"vegetarian" : true}, {"halal": true}, {sort: {rating: -1 }})
     };
