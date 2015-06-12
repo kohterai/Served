@@ -40,14 +40,15 @@
 
 			<footer>
 				<div class="bottomBar">
+					<div id="buffer1"></div>
 					<div id="vegetarian" class = "filterOff">
-						<i class="fa fa-leaf fa-3x"></i><br>Vegetarian
+						<span class="glyphicon glyphicon-leaf"></span><br><p>Vegetarian</p>
 					</div>
 					<div id="halal" class = "filterOff" >
-						<i class="fa fa-moon-o fa-3x"></i><br>Halal
+						<span class="glyphicon glyphicon-book"></span><br><p>Halal</p>
 					</div>
 					<div id="price" class="filterOff">
-						<i class="fa fa-money fa-3x"></i><br>Price
+						<span class="glyphicon glyphicon-tags"></span><br><p>Price</p>
 					</div>
 				</div>
 			</footer>
@@ -66,7 +67,8 @@
 		<a href={{detailedItem}}>
 		<div class="textHolder">
 			<p class="nameOfItem">
-				{{name}}</p>
+				{{name}}
+			</p>
 			<p class="priceOfItem">{{price}} AED</p>
 			<p class="descriptionOfItem">{{description}}</p>
 		</div>
