@@ -1,6 +1,5 @@
 /* CSS declarations go here */
 
-
 body {
 	background-color: rgb(234, 234, 234)
 }
@@ -35,5 +34,12 @@ body {
 }
 
 .row ul li {
-	
+	background-color:#aaaaaa;
+	margin-bottom:1px;
+}
+
+.row ul li, .row a{
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
 }
