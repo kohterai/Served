@@ -71,10 +71,24 @@ if (Meteor.isClient) {
   Template.feed.events({
 
     'click .voteUp': function () {
-      Meteor.call("upVote", this);
+      //Hack for changing arrow colors
+      if ($(".voteUp").hasClass("clicked")){
+        return;
+      } else {
+        $(".voteUp").addClass("clicked")
+        $(".voteDown").removeClass("clicked")
+        Meteor.call("upVote", this);
+      }
     },
     'click .voteDown': function () {
-      Meteor.call("downVote", this);
+      if ($(".voteDown").hasClass("clicked")){
+        return;
+      } else {
+        $(".voteUp").removeClass("clicked")
+        $(".voteDown").addClass("clicked")    
+        Meteor.call("downVote", this);
+      }
+      
     },
     'click #vegetarian': function () {
 
@@ -161,8 +175,12 @@ if (Meteor.isClient) {
       restaurantName = Session.get("currentRestaurant").name
       //this is the name of the food
       return "/" + restaurantName + "/food/" + this.name 
+    },
+    voteUpChecker: function() {
+    },
+    voteDownChecker: function() {
     }
-  })
+  });
 }
 
 //Need to add functionality where you can only upvote once
