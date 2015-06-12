@@ -52,12 +52,6 @@ Template.addItem.events({
         vegetarian: $("#vegetarian").is(":checked"),
         rating: 0, 
     });
-  
-    event.target.name.value = " ";
-    event.target.description.value = " ";
-    event.target.price.value = " ";
-    event.target.halal.value = " ";
-    event.target.vegetarian.value = " ";
 
     window.history.back();
     return false;
