@@ -1,13 +1,8 @@
 /* CSS declarations go here */
 
-* {
-	font-family: 'Nunito', sans-serif;
-}
 
 body {
-	background-color: #E9EBE8
-
-
+	background-color: #cccccc;
 }
 
 .filter {
@@ -18,17 +13,68 @@ body {
 	margin: 5px;
 }
 
-.ratings {
-
+.ratings, .addItem_holderInside {
+	display:inline-block;
+	width:10%;
+	padding:0 10px 0 10px;
+	float:left;
 }
 
-span.glyphicon-chevron-up span.glyphicon-chevron-down {
-	font-size: 100px;
+.ratings div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 23px;
+	text-align: center;
 }
 
-.voteUp {
+.addItem_holder {
+	background-color: #cccccc;
+}
 
-	background-color: gray;
+.addItem_holderInside div {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 22px;
+	width:20px;
+	text-align:center;
+	color: #eeeeee;
+}
+
+.textHolder {
+	display:inline-block;
+	width:90%;
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
+.nameOfItem, .TextForAddNew {
+	font-size: 21px;
+	white-space: nowrap;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	margin-bottom: 0;
+}
+
+.TextForAddNew{
+	padding-top: 10px;
+	color: #eeeeee;
+}
+
+.priceOfItem {
+	float:right;
+}
+
+.descriptionOfItem {
+	font-size:12px;
+	white-space: nowrap;
+	overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+span.glyphicon-chevron-up, span.glyphicon-chevron-down {
+	font-size: 25px;
+	text-align: center;
 }
 
 .voteDown, .voteUp {
@@ -41,7 +87,7 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
 }
 
 .container-fluid .row {
-	background-color:#E9EBE8;
+	background-color:#cccccc;
 }
 
 .row ul {
@@ -55,21 +101,44 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
+	padding-top:7px;
 	width:95%;
+	height:90px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:5px solid #E9EBE8;
+	border-bottom:2px solid #ffffff;
 
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
 }
 
-.center-block {
-  display: block;
-  margin-left: 8%;
-  margin-right: 8%;
+.input-field {
+	display:inline-block;
+	width:100%;
+	padding-top: 5px;
 }
 
+.center-block {
+	display: block;
+	text-align: center;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+.submit-button {
+	margin-bottom: 6px;
+}
+
+.submit-box {
+	width:100%;
+	text-align: center;
+	display:inline-block;
+}
+
+.check-box {
+	display:inline-block;
+	float: left;
+}
 
 .topHeader{
 	cursor: pointer;
@@ -111,14 +180,6 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
 	transition: all 0.25s ease-out;
 	margin-top: 18px;
 	color: #e9ebe8;
-}
-
-.backButton {
-	font-size: 24px;
-	margin: 18px 0px 0px 18px;
-	color: #e9ebe8;
-	display: inline-block;
-	float:left;
 }
 
 .inline {
@@ -171,11 +232,16 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
 	padding-bottom:50px;
 }
 
-.add-item-box-inner {
-	height:500px;
-	padding: 50px 15px 0px 0px;
+.add-item-container {
+	padding-right: 15px;
+	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #cccccc;
 
+}
+
+.details-description {
+	margin-bottom:5px;
+	margin-top:5px;
 }
