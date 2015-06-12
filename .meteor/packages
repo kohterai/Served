@@ -11,3 +11,4 @@ iron:router
 accounts-ui
 aldeed:autoform
 accounts-google
+mdg:geolocation

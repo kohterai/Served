@@ -35,14 +35,14 @@ restaurantList = [
     {
         _id: "1",
         name: "Gazebo",
-        latitude: 10.239823,
-        longtitude: 20.33322
+        latitude: 25.09378,
+        longtitude: 55.161152
     },
     {
         _id: "2",
         name: "Kamat",
-        latitude: 121.1212,
-        longtitude: 211121
+        latitude: 25.096881,
+        longtitude: 55.160883
     },
     {
         _id: "3",
