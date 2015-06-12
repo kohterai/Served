@@ -32,20 +32,33 @@ if (Meteor.isClient) {
   });
 
 Template.addItem.events({
-    "submit .new-food": function(even, template) {
+    "submit .new-food": function(event, form) {
     event.preventDefault();
 
-    "Need to add auto-complete here"
     "Add the new food into the food_list"
+
+    "Need to add auto-complete here"
     "Need to split filter into different word and put into list"
 
-    food_list.insert({
-        food_name: template.find(".name").value,
-        description: template.find(".description").value,
-        price: template.find(".price").value,
-        category: template.find(".category").value,
-        filter: template.find(".filter").value,
+    currentRestaurantID = Session.get('currentRestaurant')._id;
+
+    Foods.insert({
+        // restaurantID: Session.get('currentRestaurant')._id,
+        restaurantID: parseInt(currentRestaurantID,10),
+        name: event.target.name.value,
+        description: event.target.description.value,
+        price: event.target.price.value,
+        category: event.target.category.value,
+        filter: event.target.filter.value,
     });
+  
+    event.target.name.value = " ";
+    event.target.description.value = " ";
+    event.target.price.value = " ";
+    event.target.filter.value = " ";
+
+    return false;
+
     }
 });
 
