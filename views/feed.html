@@ -5,15 +5,17 @@
 	<title>Served</title>
 </head>
 
-
 <template name="feed">
+	{{> feedNearby}}
 	<div class="container-fluid">
 		<div class="row">
 
-			<h1>{{restaurantSelector}}</h1>
 			<div class="addItem_holder">
 				<a href={{addItem}}>add menu item</a>
 			</div>
+
+			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
+
 			<ul>
 				{{#each item}}
 					{{> food}}
@@ -21,10 +23,10 @@
 			</ul>
 
 			<footer>
-				<div id = "vegetarian" class = true>
+				<div id = "vegetarian" class = "true">
 					vegetarian
 				</div>
-				<div id = "halal" class = false >
+				<div id = "halal" class = "false" >
 					halal
 				</div>
 				<div class="filter">
