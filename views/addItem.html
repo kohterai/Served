@@ -1,27 +1,44 @@
 <template name="addItem">
   <form class="new-food">
+    <h1>
+      <p class="text-center">Add New Menu Item </p>
+    </h1>
+    <div class="form-group">
+      <input type="name" class="form-control"
+      id="inputFoodName" placeholder="Food Name">
+    </div>
 
-    Food Name: 
-    <br>
-    <input type="text" name="name" />
-    <br>
+    <div class="form-group">
+      <input type="Description" class="form-control"
+      id="inputDescription" placeholder="Description">
+    </div>
 
-    Description: 
-    <br>  
-    <input type="text" name="description" />
-    <br> 
+    <div class="form-group">
+      <input type="price" class="form-control"
+      id="inputPrice" placeholder="Price">
+    </div>
 
-    Price:
-    <br>
-    <input type="text" name="price" />
-    <br> 
 
-    Vegetarian: 
+    <div class="checkbox">
+       <label>
+         <input type="checkbox" id = "Vegetarian" name="vegetarian"   > vegetarian
+       </label>
+     </div>
+
+     <div class="checkbox">
+        <label>
+          <input type="checkbox" id = "Vegetarian" name="halal"  > halal <br>
+        </label>
+      </div>
+
+     <!--
+    Vegetarian:
     <br>
 
     <input type="checkbox" id = "vegetarian" name="vegetarian"   > vegetarian <br>
     <input type="checkbox" id = "vegetarian" name="halal"  > halal <br>
-
+  -->
+<!--
     Category:
     <br>
     <select name="category">
@@ -30,7 +47,9 @@
       <option value="drink">drink</option>
       <option value="desert">desert</option>
     </select>
-    <br>    
+    <br>
+  -->
+
 
     <br>
     <br>
@@ -39,4 +58,3 @@
 
   </form>
 </template>
-
