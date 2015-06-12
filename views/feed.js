@@ -32,12 +32,45 @@ if (Meteor.isClient) {
       Meteor.call("downVote", this);
     },
     'click #vegetarian': function () {
-      Meteor.call("change_class_vegetarian", this);
-      Meteor.call("display_food", this);
+      var div_tag = document.getElementById("vegetarian");
+
+      var current_class = div_tag.className;
+
+      if (current_class == "true") {
+        div_tag.className = "false"; 
+      } else {
+        div_tag.className = "true";
+      }
+
+      halal_div_class = document.getElementById("halal").className;
+      vegetarian_div_class = document.getElementById("vegetarian").className;
+
+      currentRestaurantID = Session.get('currentRestaurant')._id;
+
+      Meteor.call("display_food");
+
+      console.log("vegetarian");
     },
+
+
     'click  #halal': function () {
-      Meteor.call("change_class_halal", this);
-      Meteor.call("display_food", this);
+      div_tag = document.getElementById("halal");
+
+      var current_class = div_tag.className;
+
+      if (current_class == "true") {
+        div_tag.className = "false"; 
+      } else {
+        div_tag.className = "true";
+      };
+
+      halal_div_class = document.getElementById("halal").className;
+      vegetarian_div_class = document.getElementById("vegetarian").className;
+
+      currentRestaurantID = Session.get('currentRestaurant')._id;
+
+      Meteor.call("display_food");
+
     },
   });
 
@@ -61,38 +94,8 @@ Meteor.methods({
     Foods.update({_id:food._id}, {$set: {"rating": currentVote-1}})
   },
 
-  change_class_vegetarian: function() {
 
-    div_tag = document.getElementById("vegetarian");
-
-    var current_class = div_tag.className;
-
-    if (current_class == "true") {
-      div_tag.className = "false"; 
-    } else {
-      div_tag.className = "true";
-    }
-
-  },
-
-  change_class_halal: function() {
-
-    div_tag = document.getElementById("halal");
-
-    var current_class = div_tag.className;
-
-    if (current_class == "true") {
-      div_tag.className = "false"; 
-    } else {
-      div_tag.className = "true";
-    }
-  },
-
- display_food: function() {
-    currentRestaurantID = Session.get('currentRestaurant')._id;
-
-    halal_div_class = document.getElementById("halal").className
-    vegetarian_div_class = document.getElementById("vegetarian").className
+ display_food: function(halal_div_class, vegetarian_div_class, currentRestaurantID) {
 
     if ((halal_div_class == "false") & (vegetarian_div_class == "false")) {
       //display all food 
