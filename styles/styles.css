@@ -210,3 +210,8 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	background-color: #cccccc;
 
 }
+
+.details-description {
+	margin-bottom:5px;
+	margin-top:5px;
+}
