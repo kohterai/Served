@@ -73,7 +73,8 @@ menuList = [{
     rating: 28,
     price: 25,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
 
     {
@@ -82,7 +83,8 @@ menuList = [{
     rating: 39,
     price: 30,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
 
     {
@@ -91,7 +93,8 @@ menuList = [{
     rating: -25 ,
     price: 15,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 1,
@@ -99,7 +102,8 @@ menuList = [{
     rating: 27 ,
     price: 39,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
 
     {
@@ -442,7 +446,8 @@ menuList = [{
     rating: 19,
     price: 20,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 2,
@@ -450,7 +455,8 @@ menuList = [{
     rating: 59,
     price: 19,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 2,
@@ -458,7 +464,8 @@ menuList = [{
     rating: 29,
     price: 19,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 2,
@@ -466,7 +473,8 @@ menuList = [{
     rating: 51,
     price: 20,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 2,
@@ -474,7 +482,8 @@ menuList = [{
     rating: 27,
     price: 19,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 2,
@@ -522,7 +531,8 @@ menuList = [{
     rating: 49,
     price: 35,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 2,
@@ -530,7 +540,8 @@ menuList = [{
     rating: -18,
     price: 25,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 2,
@@ -538,7 +549,8 @@ menuList = [{
     rating: 39,
     price: 30,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 2,
@@ -546,7 +558,8 @@ menuList = [{
     rating: 15,
     price: 15,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
 
     {
@@ -611,7 +624,8 @@ menuList = [{
     rating: 29,
     price: 75,
     category: "main",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 3,
@@ -627,7 +641,8 @@ menuList = [{
     rating: 49,
     price: 78,
     category: "main",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 3,
@@ -635,7 +650,8 @@ menuList = [{
     rating: 37,
     price: 25,
     category: "main",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 3,
@@ -683,7 +699,8 @@ menuList = [{
     rating: 19,
     price: 26,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 3,
@@ -691,7 +708,8 @@ menuList = [{
     rating: 28,
     price: 19,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 3,
@@ -699,7 +717,8 @@ menuList = [{
     rating: 59,
     price: 39,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 3,
@@ -707,7 +726,8 @@ menuList = [{
     rating: 26,
     price: 17,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
 
     {
@@ -732,7 +752,8 @@ menuList = [{
     rating: -10,
     price: 20,
     category: "drink",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 4,
@@ -756,7 +777,8 @@ menuList = [{
     rating: -13,
     price: 38,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     },     {
     restaurantID: 4,
     name: "Eggplant",
@@ -785,7 +807,8 @@ menuList = [{
     rating: -10,
     price: 28,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 4,
@@ -817,7 +840,8 @@ menuList = [{
     rating: 39,
     price: 19,
     category: "drink",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
 
     {
@@ -842,7 +866,8 @@ menuList = [{
     rating: 49,
     price: 85,
     category: "appetizer",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 5, 
@@ -874,7 +899,8 @@ menuList = [{
     rating: 45,
     price: 140,
     category: "main dish",
-    filter: ["halal"]
+    filter: ["halal"],
+    halal: true
     }, 
     {
     restaurantID: 5,
@@ -898,7 +924,8 @@ menuList = [{
     rating: 39,
     price: 35,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 5,
@@ -906,7 +933,8 @@ menuList = [{
     rating: -15,
     price: 25,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
     {
     restaurantID: 5,
@@ -914,7 +942,8 @@ menuList = [{
     rating: 46,
     price: 95,
     category: "main dish",
-    filter: ["vegetarian"]
+    filter: ["vegetarian"],
+    vegeterian: true
     }, 
 
 ]
