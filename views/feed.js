@@ -18,7 +18,7 @@ if (Meteor.isClient) {
       // return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
       // return Meteor.call('display_food', halal, vegetarian, currentRestaurantID)
       // return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
-
+      
       if (price == true) {
         if (halal & vegetarian) {
             console.log("only vegitarian and only halal")
