@@ -20,7 +20,7 @@ if (Meteor.isClient) {
       if (halal & vegetarian) {
           console.log("only vegitarian and only halal")
           //display only halal and vegetarian food
-          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian" : true, "halal": true}, {sort: {rating: -1}})
+          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian": true, "halal": true}, {sort: {rating: -1}})
       } else if (halal) {
           console.log("only halal")
           //display only halal food 
@@ -28,7 +28,7 @@ if (Meteor.isClient) {
       } else if (vegetarian) {
           console.log("only vegitarian")
           //display only vegetarian food 
-          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian" : true}, {sort: {rating: -1}})
+          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian": true}, {sort: {rating: -1}})
       } else {
         console.log("displaying all")
         //display all
@@ -60,17 +60,14 @@ if (Meteor.isClient) {
         Session.set("vegetarian", true);
       };
 
-      console.log(Session.get("vegetarian"));
-      
 
       var div_tag = document.getElementById("vegetarian");
-
       var current_class = div_tag.className;
 
-      if (current_class == "true") {
-        div_tag.className = "false"; 
+      if (current_class == "filterOn") {
+        div_tag.className = "filterOff"; 
       } else {
-        div_tag.className = "true";
+        div_tag.className = "filterOn";
       }
 
       halal_div_class = document.getElementById("halal").className;
@@ -90,10 +87,10 @@ if (Meteor.isClient) {
 
       var current_class = div_tag.className;
 
-      if (current_class == "true") {
-        div_tag.className = "false"; 
+      if (current_class == "filterOn") {
+        div_tag.className = "filterOff"; 
       } else {
-        div_tag.className = "true";
+        div_tag.className = "filterOn";
       };
 
       halal_div_class = document.getElementById("halal").className;
