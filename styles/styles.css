@@ -121,11 +121,11 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .submit-button {
-	text-align: center; 
-	margin-bottom: 6px; 
+	text-align: center;
+	margin-bottom: 6px;
 }
 
-<<<<<<< HEAD
+
 .submit-box {
 	width:100%;
 	text-align: center;
@@ -136,7 +136,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	display:inline-block;
 	float: left;
 }
-=======
+
 .topHeader{
 	cursor: pointer;
 	background-color: orange;
@@ -206,4 +206,3 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .feedList {
 	margin-top: 71px
 }
->>>>>>> 8cce01ba8fafe3e7223f2678eada62160d5a001f
