@@ -33,3 +33,7 @@ myDistance = function(lat1, lon1, lat2, lon2, unit) {
 			// convert units to meters and get rid of decimals
 			return Math.round(dist*1000)
 }
+
+// $(document).ready(function() {
+// 	console.log($("#dropDownMenu").height
+// })

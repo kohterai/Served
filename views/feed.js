@@ -124,9 +124,7 @@ if (Meteor.isClient) {
       currentRestaurantID = Session.get('currentRestaurant')._id;
 
       Meteor.call("display_food");
-
     },
-
     'click #price': function () {
       if (Session.get("price")) {
         Session.set("price", false);
@@ -143,6 +141,12 @@ if (Meteor.isClient) {
       } else {
         div_tag.className = "filterOn";
       };
+    },
+    'click .restaurantTitle': function() {
+      console.log($("#dropDownMenu").css("height"));
+      height = "-" + $("#dropDownMenu").css("height");
+      $('#dropDownMenu').css({"top": height, "display": "block"});
+      $('#dropDownMenu').css("top", "65px");
 
     }
   });
