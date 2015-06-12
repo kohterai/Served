@@ -1,11 +1,11 @@
 <template name="feedNearby">
 	<div id="dropDownMenu">
+
 		<h1>Nearby Restaurants!</h1>
-		{{location}}
 		{{#each restaurantList}}
 			<div class="dropDownList menuToggler">
+
 				<a href="/{{name}}">{{name}}</a>
-				<div class="inline">{{distance}}m</div>
 			</div>
 		{{/each}}
 	</div>

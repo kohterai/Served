@@ -5,7 +5,9 @@
 }
 
 body {
-	background-color: #cccccc;
+	background-color: #E9EBE8
+
+
 }
 
 .filter {
@@ -16,68 +18,17 @@ body {
 	margin: 5px;
 }
 
-.ratings, .addItem_holderInside {
-	display:inline-block;
-	width:10%;
-	padding:0 10px 0 10px;
-	float:left;
+.ratings {
+
 }
 
-.ratings div {
-	margin-left: auto;
-	margin-right: auto;
-	width: 23px;
-	text-align: center;
+span.glyphicon-chevron-up span.glyphicon-chevron-down {
+	font-size: 100px;
 }
 
-.addItem_holder {
-	background-color: #cccccc;
-}
+.voteUp {
 
-.addItem_holderInside div {
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: 22px;
-	width:20px;
-	text-align:center;
-	color: #eeeeee;
-}
-
-.textHolder {
-	display:inline-block;
-	width:90%;
-	padding-top: 10px;
-	padding-left: 25px;
-}
-
-.nameOfItem, .TextForAddNew {
-	font-size: 21px;
-	white-space: nowrap;
-	overflow: hidden;
-  	text-overflow: ellipsis;
-	margin-bottom: 0;
-}
-
-.TextForAddNew{
-	padding-top: 10px;
-	color: #eeeeee;
-}
-
-.priceOfItem {
-	float:right;
-}
-
-.descriptionOfItem {
-	font-size:12px;
-	white-space: nowrap;
-	overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-
-span.glyphicon-chevron-up, span.glyphicon-chevron-down {
-	font-size: 25px;
-	text-align: center;
+	background-color: gray;
 }
 
 .voteDown, .voteUp {
@@ -90,7 +41,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .container-fluid .row {
-	background-color:#cccccc;
+	background-color:#E9EBE8;
 }
 
 .row ul {
@@ -104,44 +55,25 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
-	padding-top:7px;
 	width:95%;
-	height:90px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:2px solid #ffffff;
+	border-bottom:5px solid #E9EBE8;
 
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
 }
 
-.input-field {
-	display:inline-block;
-	width:100%;
-	padding-top: 5px;
-}
-
 .center-block {
-	display: block;
-	text-align: center;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
+  display: block;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
-.submit-button {
-	margin-bottom: 6px;
-}
-
-.submit-box {
-	width:100%;
-	text-align: center;
-	display:inline-block;
-}
-
-.check-box {
-	display:inline-block;
-	float: left;
-}
+p {
+    text-align: center;
+    color: #ED6027;
+		font-family: 'Nunito', sans-serif;
 
 .topHeader{
 	cursor: pointer;
@@ -251,9 +183,4 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	margin-left: auto;
 	background-color: #cccccc;
 
-}
-
-.details-description {
-	margin-bottom:5px;
-	margin-top:5px;
 }
