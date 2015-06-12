@@ -126,13 +126,13 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	background-color: #E1F5A5;
 	width: 100%;
 	top: -500px;
-	transition: all 0.2s ease-out;
+	transition: all 0.4s ease-out;
 	z-index: 10
 }
 
 #dropDownGlyph {
 	font-size: 24px;
-	transition: all 0.2s ease-out;
+	transition: all 0.25s ease-out;
 }
 
 .inline {

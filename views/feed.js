@@ -142,7 +142,7 @@ if (Meteor.isClient) {
         div_tag.className = "filterOn";
       };
     },
-    'click .topHeader': function() {
+    'click .menuToggler': function() {
       if ($("#dropDownGlyph").hasClass("up")) {
         $("#dropDownGlyph").css("transform", "rotate(180deg)");
         $('#dropDownMenu').css("top", "65px");
