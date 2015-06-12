@@ -17,25 +17,23 @@
 				{{/each}}
 			</ul>
 
-			<footer>
-				<div class="filter">
-					All
-				</div>
-				<div class="filter">
-					Top Ranked
-				</div>
-				<div class="filter">
-					Vegetarian
-				</div>
-			</footer>
-
-		</div>
+		<footer>
+			<div id="topVoteFilter" class="filter">
+				All
+			</div>
+			<div class="filter">
+				Top Ranked
+			</div>
+			<div class="filter">
+				Vegetarian
+			</div>
+		</footer>
 	</div>
 </template>
 
 <template name="food">
 	<li>
-		<a href={{pathFor route='post.show'}}>{{name}}</a>
+		<a href={{detailedItem}}>{{name}}</a>
 		<div class="ratings">
 			<div class="voteUp">VOTEUP</div>
 			<div class="voteDown">VOTEDOWN</div>
