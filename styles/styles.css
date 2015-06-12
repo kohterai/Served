@@ -12,9 +12,16 @@ body {
 	margin: 5px;
 }
 
+.ratings {
+
+}
+
+span.glyphicon-chevron-up span.glyphicon-chevron-down {
+	font-size: 100px;
+}
+
 .voteUp {
-	width: 30px;
-	height: 30px;
+
 	background-color: gray;
 }
 
@@ -34,12 +41,16 @@ body {
 }
 
 .row ul li {
-	background-color:#aaaaaa;
+
 	margin-bottom:1px;
 }
 
-.row ul li, .row a{
+.row ul li, .addItem_holder{
 	width:95%;
 	margin-left:auto;
 	margin-right:auto;
+	border-bottom:5px solid #ffffff;
+
+	font-family: 'Nunito', sans-serif;
+	letter-spacing: 0.5px;
 }
