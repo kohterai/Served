@@ -14,7 +14,6 @@ if (Meteor.isClient) {
       // console.log(Foods.find({}).count())
       // console.log(parseInt(currentRestaurantID,10))
       // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}).count())
-
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
     },
     addItem: function() {

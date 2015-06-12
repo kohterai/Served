@@ -1,23 +1,37 @@
+<head>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<title>Served</title>
+</head>
+
+
 <template name="feed">
-	<h1>{{restaurantSelector}}</h1>
-	<a href={{addItem}}>+ add menu item</a>
-	<ul>
-		{{#each item}}
-			{{> food}}
-		{{/each}}
-	</ul>
+	<div class="container-fluid">
+		<div class="row">
 
 	<footer>
-		<div id = "vegetarian" class = "true">
-			vegetarian 
+			<h1>{{restaurantSelector}}</h1>
+			<a href={{addItem}}>+ add menu item</a>
+			<ul>
+				{{#each item}}
+					{{> food}}
+				{{/each}}
+			</ul>
+
+			<footer>
+				<div id = "vegetarian" class = true>
+					vegetarian
+				</div>
+				<div id = "halal" class = false >
+					halal
+				</div>
+				<div class="filter">
+					price
+				</div>
+			</footer>
+			
 		</div>
-		<div id = "halal" class = "false" >
-			halal 
-		</div>
-		<div class="filter">
-			price
-		</div>
-	</footer>
+	</div>
 </template>
 
 <template name="food">

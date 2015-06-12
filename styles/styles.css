@@ -24,3 +24,7 @@ body {
 	height: 30px;
 	background-color: gray;
 }
+
+.container-fluid .row {
+	background:"#222222";
+}
