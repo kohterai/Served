@@ -23,11 +23,25 @@ body {
 .textHolder {
 	display:inline-block;
 	width:90%;
+	padding-top: 5px;
+}
 
+.textHolder a {
+	font-size: 27px;
+	white-space: nowrap;
+	overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .priceOfItem {
 	float:right;
+}
+
+.descriptionOfItem {
+	font-size:12px;
+	white-space: nowrap;
+	overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 
@@ -59,12 +73,12 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
-	padding-top:10px;
+	padding-top:12px;
 	width:95%;
 	height:90px;
 	margin-left:auto;
 	margin-right:auto;
-	border-bottom:5px solid #ffffff;
+	border-bottom:2px solid #ffffff;
 
 	font-family: 'Nunito', sans-serif;
 	letter-spacing: 0.5px;
