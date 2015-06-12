@@ -1,7 +1,8 @@
 /* CSS declarations go here */
 
+
 body {
-	background-color: rgb(234, 234, 234)
+	background-color: #cccccc;
 }
 
 .filter {
@@ -13,22 +14,34 @@ body {
 }
 
 .ratings {
+	display:inline-block;
+	width:10%;
+	padding:0 10px 0 10px;
+	float:left;
+}
+
+.textHolder {
+	display:inline-block;
+	width:90%;
 
 }
 
-span.glyphicon-chevron-up span.glyphicon-chevron-down {
-	font-size: 100px;
+.priceOfItem {
+	float:right;
+}
+
+
+span.glyphicon-chevron-up, span.glyphicon-chevron-down {
+	font-size: 18px;
 }
 
 .voteUp {
 
-	background-color: gray;
+	background-color: none;
 }
 
 .voteDown {
-	width: 30px;
-	height: 30px;
-	background-color: gray;
+	background-color: none;
 }
 
 .container-fluid .row {
@@ -46,7 +59,9 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
 }
 
 .row ul li, .addItem_holder{
+	padding-top:10px;
 	width:95%;
+	height:90px;
 	margin-left:auto;
 	margin-right:auto;
 	border-bottom:5px solid #ffffff;

@@ -10,11 +10,13 @@
 	<div class="container-fluid">
 		<div class="row">
 
+			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
+
 			<div class="addItem_holder">
 				<a href={{addItem}}>add menu item</a>
 			</div>
 
-			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
+
 
 			<ul>
 				{{#each item}}
@@ -40,12 +42,14 @@
 
 <template name="food">
 	<li>
-		<a href={{detailedItem}}>{{name}}</a>
 		<div class="ratings">
 			<div class="voteUp"><span class="glyphicon glyphicon-chevron-up"></span></div>
 			{{rating}}
 			<div class="voteDown"><span class="glyphicon glyphicon-chevron-down"></span></div>
 		</div>
-		{{price}}
+		<div class="textHolder">
+			<a href={{detailedItem}}>{{name}}</a>
+			<p class="priceOfItem">{{price}}</p>
+		</div>
 	</li>
 </template>
