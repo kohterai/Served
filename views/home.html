@@ -9,7 +9,9 @@
 <template name="home">
 	<h1>Nearby Restuarants</h1>
 	{{#each restaurantList}}
-		<div>{{name}}</div>
+		<div>
+			<a href="/{{name}}">{{name}}</a>
+		</div>
 	{{/each}}
 </template>
 
