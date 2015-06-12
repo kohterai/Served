@@ -6,23 +6,26 @@
 </head>
 
 <template name="details">
+<div class="add-item-container">
 	<a href={{backButton}}>BACK</a>
 	<h1>{{name}}</h1>
 	<img src={{image}} />
+
 	<div>
+		Rating: {{rating}}
+	</div> 
+	<div>
+		Price: {{price}}
 	</div>
 	<div>
-		{{rating}}
+		Category: {{category}}
 	</div>
+	
+
 	<div>
-		{{price}}
+		Description: {{description}}
 	</div>
-	<div>
-		{{category}}
-	</div>
-	<div>
-		{{description}}
-	</div>
+
 	<div class="displayComments">
 		{{#each commentFind}}
 			<div>
@@ -40,7 +43,7 @@
 			<button>Submit Comment</button>
 		</form>
 	{{/if}}
-	
+</div>	
 
 
 </template>
