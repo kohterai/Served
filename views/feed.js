@@ -142,12 +142,17 @@ if (Meteor.isClient) {
         div_tag.className = "filterOn";
       };
     },
-    'click .restaurantTitle': function() {
-      console.log($("#dropDownMenu").css("height"));
-      height = "-" + $("#dropDownMenu").css("height");
-      $('#dropDownMenu').css({"top": height, "display": "block"});
-      $('#dropDownMenu').css("top", "65px");
-
+    'click .menuToggler': function() {
+      if ($("#dropDownGlyph").hasClass("up")) {
+        $("#dropDownGlyph").css("transform", "rotate(180deg)");
+        $('#dropDownMenu').css("top", "65px");
+        $("#dropDownGlyph").removeClass("up");
+      } else {
+        $("#dropDownGlyph").css("transform", "rotate(-0deg)");
+        $("#dropDownGlyph").addClass("up");
+        height = "-" + $("#dropDownMenu").css("height");
+        $('#dropDownMenu').css({"top": height, "display": "block"});
+      }
     }
   });
 

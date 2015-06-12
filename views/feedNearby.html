@@ -3,9 +3,9 @@
 		<h1>Nearby Restaurants!</h1>
 		{{location}}
 		{{#each restaurantList}}
-			<div class="dropDownList">
+			<div class="dropDownList menuToggler">
 				<a href="/{{name}}">{{name}}</a>
-				<div class="dropDownDist">{{distance}}m</div>
+				<div class="inline">{{distance}}m</div>
 			</div>
 		{{/each}}
 	</div>

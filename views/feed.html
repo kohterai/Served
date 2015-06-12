@@ -12,29 +12,31 @@
 </head>
 
 <template name="feed">
-	{{> feedNearby}}
 	<div class="container-fluid">
 		<div class="row">
-
-			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
-
-			<span class="glyphicon glyphicon-menu-down"></span>
-
-			<a href={{addItem}}>
-				<div class="addItem_holder">
-					<div class="addItem_holderInside">
-							<div><span class="glyphicon glyphicon-plus"></span></div>
-					</div>
-				<div class="textHolder">
-					<p class="TextForAddNew">Add New Item</p>
-				</div>
+			<div class="topHeader menuToggler">
+				<h1 class="inline restaurantTitle">{{restaurantSelector}}</h1>
+				<div id="dropDownGlyph" class="up inline glyphicon glyphicon-menu-down"></div>
 			</div>
-		</a>
-			<ul>
-				{{#each item}}
-					{{> food}}
-				{{/each}}
-			</ul>
+			{{> feedNearby}}
+			
+			<div class="feedList">
+				<a href={{addItem}}>
+					<div class="addItem_holder">
+						<div class="addItem_holderInside">
+								<div><span class="glyphicon glyphicon-plus"></span></div>
+						</div>
+					<div class="textHolder">
+						<p class="TextForAddNew">Add New Item</p>
+					</div>
+				</div>
+				</a>
+				<ul>
+					{{#each item}}
+						{{> food}}
+					{{/each}}
+				</ul>
+			</div>
 
 			<footer>
 				<div class="bottomBar">
