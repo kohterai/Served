@@ -447,7 +447,7 @@ menuList = [{
     price: 20,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 2,
@@ -456,7 +456,7 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 2,
@@ -465,7 +465,7 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 2,
@@ -474,7 +474,7 @@ menuList = [{
     price: 20,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 2,
@@ -483,7 +483,7 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 2,
@@ -700,7 +700,7 @@ menuList = [{
     price: 26,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 3,
@@ -709,7 +709,7 @@ menuList = [{
     price: 19,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 3,
@@ -718,7 +718,7 @@ menuList = [{
     price: 39,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 3,
@@ -727,7 +727,7 @@ menuList = [{
     price: 17,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
 
     {
@@ -925,7 +925,7 @@ menuList = [{
     price: 35,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 5,
@@ -934,7 +934,7 @@ menuList = [{
     price: 25,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
     {
     restaurantID: 5,
@@ -943,7 +943,7 @@ menuList = [{
     price: 95,
     category: "main dish",
     filter: ["vegetarian"],
-    vegeterian: true
+    vegetarian: true
     }, 
 
 ]

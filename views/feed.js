@@ -1,6 +1,7 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+
+  Session.set("halal", false);
+  Session.set("vegetarian", false);
 
   Template.feed.helpers({
     restaurantSelector: function () {
@@ -10,11 +11,30 @@ if (Meteor.isClient) {
     },
     //Find the corresponding food items from the current restaurant
     item: function() {
+      halal = Session.get("halal");
+      vegetarian = Session.get("vegetarian")
       currentRestaurantID = Session.get('currentRestaurant')._id;
-      // console.log(Foods.find({}).count())
-      // console.log(parseInt(currentRestaurantID,10))
-      // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}).count())
-      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
+      // return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
+      // return Meteor.call('display_food', halal, vegetarian, currentRestaurantID)
+      // return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
+      if (halal & vegetarian) {
+          console.log("only vegitarian and only halal")
+          //display only halal and vegetarian food
+          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian" : true, "halal": true}, {sort: {rating: -1}})
+      } else if (halal) {
+          console.log("only halal")
+          //display only halal food 
+          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "halal": true}, {sort: {rating: -1}})
+      } else if (vegetarian) {
+          console.log("only vegitarian")
+          //display only vegetarian food 
+          return Foods.find({"restaurantID": parseInt(currentRestaurantID,10), "vegetarian" : true}, {sort: {rating: -1}})
+      } else {
+        console.log("displaying all")
+        //display all
+        // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }}))
+        return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1}})
+      };
     },
     addItem: function() {
       //this is the restaurant right now
@@ -25,6 +45,7 @@ if (Meteor.isClient) {
   });
 
   Template.feed.events({
+
     'click .voteUp': function () {
       Meteor.call("upVote", this);
     },
@@ -32,6 +53,16 @@ if (Meteor.isClient) {
       Meteor.call("downVote", this);
     },
     'click #vegetarian': function () {
+
+      if (Session.get("vegetarian")) {
+        Session.set("vegetarian", false);
+      } else {
+        Session.set("vegetarian", true);
+      };
+
+      console.log(Session.get("vegetarian"));
+      
+
       var div_tag = document.getElementById("vegetarian");
 
       var current_class = div_tag.className;
@@ -47,13 +78,14 @@ if (Meteor.isClient) {
 
       currentRestaurantID = Session.get('currentRestaurant')._id;
 
-      Meteor.call("display_food");
-
-      console.log("vegetarian");
+      // Meteor.call("display_food");
     },
-
-
     'click  #halal': function () {
+      if (Session.get("halal")) {
+        Session.set("halal", false);
+      } else {
+        Session.set("halal", true);
+      };
       div_tag = document.getElementById("halal");
 
       var current_class = div_tag.className;
@@ -93,30 +125,6 @@ Meteor.methods({
     currentVote = food.rating;
     Foods.update({_id:food._id}, {$set: {"rating": currentVote-1}})
   },
-
-
- display_food: function(halal_div_class, vegetarian_div_class, currentRestaurantID) {
-
-    if ((halal_div_class == "false") & (vegetarian_div_class == "false")) {
-      //display all food 
-      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
-    };
-
-    if ((halal_div_class == "true") & (vegetarian_div_class == "false")) {
-      //display only halal food 
-      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"halal": true}, {sort: {rating: -1 }})
-    };
-
-    if ((halal_div_class == "false") & (vegetarian_div_class == "true")) {
-      //display only vegetarian food 
-      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"vegetarian" : true}, {sort: {rating: -1 }})
-    };
-
-    if ((halal_div_class == "true") & (vegetarian_div_class == "true")) {
-      //display both halal and vegetarian food 
-      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {"vegetarian" : true}, {"halal": true}, {sort: {rating: -1 }})
-    };
-  },
-
-
+  display_food: function(halal, vegetarian, currentRestaurantID) {
+  }
 })
