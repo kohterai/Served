@@ -36,6 +36,20 @@ if (Meteor.isClient) {
     },
     'click .filter': function() {
       console.log("We are right here right now")
+    },
+    "submit .sendComment": function(event, form) {
+      event.preventDefault();
+
+      Comments.insert({
+          // restaurantID: Session.get('currentRestaurant')._id,
+          foodID: this._id,
+          author: Meteor.user().profile.name,
+          date: new Date(),
+          comment: event.target.comments.value,
+    });
+        event.target.comments.value = ""
+
+    return false;
     }
   });
 }
