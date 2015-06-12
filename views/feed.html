@@ -19,12 +19,12 @@
 				<div id="dropDownGlyph" class="up inline glyphicon glyphicon-menu-down"></div>
 			</div>
 			{{> feedNearby}}
-			
+
 			<div class="feedList">
 				<a href={{addItem}}>
 					<div class="addItem_holder">
 						<div class="addItem_holderInside">
-								<div><span class="glyphicon glyphicon-plus"></span></div>
+								<div><i class="fa fa-plus-square-o fa-2x"></i></div>
 						</div>
 					<div class="textHolder">
 						<p class="TextForAddNew">Add New Item</p>
@@ -41,13 +41,13 @@
 			<footer>
 				<div class="bottomBar">
 					<div id="vegetarian" class = "filterOff">
-						Vegetarian
+						<i class="fa fa-leaf fa-3x"></i><br>Vegetarian
 					</div>
 					<div id="halal" class = "filterOff" >
-						Halal
+						<i class="fa fa-moon-o fa-3x"></i><br>Halal
 					</div>
 					<div id="price" class="filterOff">
-						Price
+						<i class="fa fa-money fa-3x"></i><br>Price
 					</div>
 				</div>
 			</footer>
@@ -65,7 +65,8 @@
 		</div>
 		<a href={{detailedItem}}>
 		<div class="textHolder">
-			<p class="nameOfItem">{{name}}</p>
+			<p class="nameOfItem">
+				{{name}}</p>
 			<p class="priceOfItem">{{price}} AED</p>
 			<p class="descriptionOfItem">{{description}}</p>
 		</div>
