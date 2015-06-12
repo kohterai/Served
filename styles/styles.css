@@ -13,24 +13,50 @@ body {
 	margin: 5px;
 }
 
-.ratings {
+.ratings, .addItem_holderInside {
 	display:inline-block;
 	width:10%;
 	padding:0 10px 0 10px;
 	float:left;
 }
 
+.ratings div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 20px;
+	text-align: center;
+}
+
+.addItem_holder {
+	background-color: #000000;
+}
+
+.addItem_holderInside div {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 20px;
+	width:20px;
+	text-align:center;
+}
+
 .textHolder {
 	display:inline-block;
 	width:90%;
 	padding-top: 5px;
+	padding-left: 5px;
 }
 
-.textHolder a {
-	font-size: 27px;
+.textHolder a p, .TextForAddNew {
+	font-size: 25px;
 	white-space: nowrap;
 	overflow: hidden;
   text-overflow: ellipsis;
+	margin-bottom: 0;
+}
+
+.TextForAddNew{
+	padding-top: 10px;
+	
 }
 
 .priceOfItem {
@@ -47,15 +73,12 @@ body {
 
 span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	font-size: 18px;
+	text-align: center;
 }
 
-.voteUp {
+.voteDown, .voteUp {
+	cursor: pointer;
 
-	background-color: none;
-}
-
-.voteDown {
-	background-color: none;
 }
 
 .container-fluid .row {
