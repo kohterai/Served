@@ -1,3 +1,11 @@
 <template name="feedNearby">
-	<h1>We are now at the NEARBY screen!</h1>
+	<h1>Nearby Restaurants!</h1>
+	{{location}}
+	{{#each restaurantList}}
+		<div>
+			<a href="/{{name}}">{{name}}</a>
+			<div>{{distance}}m</div>
+		</div>
+	{{/each}}
+
 </template>
