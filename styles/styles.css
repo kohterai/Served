@@ -246,9 +246,10 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	height:500px;
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #cccccc;
+	background-color: #E9EBE8;
 
 }
 
@@ -274,3 +275,12 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 #left-smoke {
 
 }
+/*<<<<<<< HEAD
+=======
+
+p{
+	color: #ED6027;
+	font-family: 'Nunito', sans-serif;
+
+}
+>>>>>>> d918e3fc97d388d490601a5b16ef45440ec56386*/
