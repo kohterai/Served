@@ -70,10 +70,6 @@ span.glyphicon-chevron-up span.glyphicon-chevron-down {
   margin-right: 8%;
 }
 
-p {
-    text-align: center;
-    color: #ED6027;
-		font-family: 'Nunito', sans-serif;
 
 .topHeader{
 	cursor: pointer;
@@ -177,8 +173,7 @@ p {
 
 .add-item-box-inner {
 	height:500px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 50px 15px 0px 0px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #cccccc;
