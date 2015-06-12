@@ -13,7 +13,7 @@ Router.route('/addItem', function () {
 Router.route('/:_id', function () {
   this.render('feed', {
     data: function () {
-    	// console.log(Restaurants.findOne({name: this.params._id}))
+    	//console.log(Restaurants.findOne({name: this.params._id}))
       return Restaurants.findOne({name: this.params._id});
     }
   });

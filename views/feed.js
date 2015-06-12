@@ -4,10 +4,9 @@ if (Meteor.isClient) {
 
   Template.feed.helpers({
     restaurantSelector: function () {
-      ourRestaurant = Restaurants.findOne();
       //Store the currentRestaurant as a session variable
-      Session.set('currentRestaurant', ourRestaurant)
-      return ourRestaurant.name;
+      Session.set('currentRestaurant', this)
+      return this.name;
     },
     //Find the corresponding food items from the current restaurant
     item: function() {
