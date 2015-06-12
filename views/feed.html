@@ -4,12 +4,16 @@
 	<title>Served</title>
 </head>
 
-
 <template name="feed">
+	{{> feedNearby}}
 	<div class="container-fluid">
 		<div class="row">
+<<<<<<< HEAD
 
 			<h1>{{restaurantSelector}}</h1>
+=======
+			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
+>>>>>>> ca23dd684fcecd3bc8f6bd6c09fce6223dac8078
 			<a href={{addItem}}>+ add menu item</a>
 			<ul>
 				{{#each item}}
@@ -18,17 +22,17 @@
 			</ul>
 
 			<footer>
-				<div id = "vegetarian" class = true>
+				<div id = "vegetarian" class = "true">
 					vegetarian
 				</div>
-				<div id = "halal" class = false >
+				<div id = "halal" class = "false" >
 					halal
 				</div>
 				<div class="filter">
 					price
 				</div>
 			</footer>
-
+			
 		</div>
 	</div>
 </template>
