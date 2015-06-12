@@ -28,7 +28,7 @@ body {
 }
 
 .addItem_holder {
-	background-color: #000000;
+	background-color: #cccccc;
 }
 
 .addItem_holderInside div {
@@ -37,6 +37,7 @@ body {
 	margin-top: 22px;
 	width:20px;
 	text-align:center;
+	color: #eeeeee;
 }
 
 .textHolder {
@@ -56,7 +57,7 @@ body {
 
 .TextForAddNew{
 	padding-top: 10px;
-
+	color: #eeeeee;
 }
 
 .priceOfItem {
@@ -67,7 +68,7 @@ body {
 	font-size:12px;
 	white-space: nowrap;
 	overflow: hidden;
-  	text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 
@@ -139,24 +140,40 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .topHeader{
 	cursor: pointer;
-	background-color: orange;
+	background-color: #ed8943;
 	z-index: 20;
 	position: absolute;
-	width: 100%
+	width: 100%;
+	box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.restaurantTitle {
+	width:90%;
+	padding-right: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float:left;
+	display:inline-block;
+	font-family: 'Nunito', sans-serif;
+	padding-left: 20px;
+	margin-top: 13px;
 }
 
 #dropDownMenu {
 	position: absolute;
-	background-color: #E1F5A5;
+	background-color: #dddddd;
 	width: 100%;
 	top: -500px;
 	transition: all 0.4s ease-out;
-	z-index: 10
+	z-index: 10;
 }
+
 
 #dropDownGlyph {
 	font-size: 24px;
 	transition: all 0.25s ease-out;
+	margin-top: 20px;
 }
 
 .inline {
@@ -204,5 +221,5 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .feedList {
-	margin-top: 71px
+	margin-top: 65px
 }
