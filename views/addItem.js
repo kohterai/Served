@@ -18,6 +18,8 @@ if (Meteor.isClient) {
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
     },
     test:function() {
+      console.log("test Funciton")
+      console.log(this)
       console.log(Session.get("currentRestaurant"))
     }
   });
@@ -29,6 +31,12 @@ if (Meteor.isClient) {
     'click .voteDown': function () {
       Meteor.call("downVote", this);
     },
+<<<<<<< HEAD
+=======
+    'click #topVoteFilter': function() {
+      console.log("We are right here right now")
+    }
+>>>>>>> ed07fa456180aac3bfae67011fda1769c8d62005
   });
 
 Template.addItem.events({

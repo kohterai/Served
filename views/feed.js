@@ -14,8 +14,18 @@ if (Meteor.isClient) {
       // console.log(Foods.find({}).count())
       // console.log(parseInt(currentRestaurantID,10))
       // console.log(Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}).count())
+<<<<<<< HEAD
 
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)}, {sort: {rating: -1 }})
+=======
+      return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
+    },
+    addItem: function() {
+      //this is the restaurant right now
+      console.log(this)
+      //we want to return /restaurantName/addmenu
+      return this.name +"/addItem"
+>>>>>>> ed07fa456180aac3bfae67011fda1769c8d62005
     }
   });
 
@@ -35,6 +45,14 @@ if (Meteor.isClient) {
       Meteor.call("display_food", this);
     },
   });
+
+  Template.food.helpers({
+    detailedItem: function() {
+      restaurantName = Session.get("currentRestaurant").name
+      //this is the name of the food
+      return "/" + restaurantName + "/food/" + this.name 
+    }
+  })
 }
 
 //Need to add functionality where you can only upvote once

@@ -18,8 +18,7 @@ if (Meteor.isClient) {
       return Foods.find({"restaurantID": parseInt(currentRestaurantID,10)})
     },
     test:function() {
-      console.log("we are here")
-      console.log(test)
+      return this.name
     }
   });
 

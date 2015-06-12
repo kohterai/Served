@@ -1,6 +1,6 @@
 <template name="feed">
 	<h1>{{restaurantSelector}}</h1>
-	<a href="/addItem">+ add menu item</a>
+	<a href={{addItem}}>+ add menu item</a>
 	<ul>
 		{{#each item}}
 			{{> food}}
@@ -8,8 +8,13 @@
 	</ul>
 
 	<footer>
+<<<<<<< HEAD
 		<div id = "vegetarian" class = true>
 			vegetarian 
+=======
+		<div id="topVoteFilter" class="filter">
+			All
+>>>>>>> ed07fa456180aac3bfae67011fda1769c8d62005
 		</div>
 		<div id = "halal" class = false >
 			halal 
@@ -22,7 +27,7 @@
 
 <template name="food">
 	<li>
-		<a href={{pathFor route='post.show'}}>{{name}}</a>
+		<a href={{detailedItem}}>{{name}}</a>
 		<div class="ratings">
 			<div class="voteUp">VOTEUP</div>
 			<div class="voteDown">VOTEDOWN</div>
