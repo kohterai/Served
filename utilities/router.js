@@ -20,6 +20,9 @@ Router.route('/:_id', function () {
 });
 
 Router.route('/:_id/addItem', function () {
+  var names = this.params;
+  ourRestaurant = Restaurants.findOne({"name": names._id})
+  Session.set('currentRestaurant', ourRestaurant)
   this.render('addItem', {
     data: function () {
       //console.log(Restaurants.findOne({name: this.params._id}))
