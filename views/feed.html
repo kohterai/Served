@@ -3,44 +3,52 @@
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-startup-image" href="/startup.png">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 	<title>Served</title>
 </head>
 
 <template name="feed">
-	{{> feedNearby}}
 	<div class="container-fluid">
 		<div class="row">
-
-			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
-
-			<a href={{addItem}}>
-				<div class="addItem_holder">
-					<div class="addItem_holderInside">
-							<div><span class="glyphicon glyphicon-plus"></span></div>
-					</div>
-				<div class="textHolder">
-					<p class="TextForAddNew">Add New Item</p>
-				</div>
+			<div class="topHeader menuToggler">
+				<h1 class="inline restaurantTitle">{{restaurantSelector}}</h1>
+				<div id="dropDownGlyph" class="up inline glyphicon glyphicon-menu-down"></div>
 			</div>
-		</a>
+			{{> feedNearby}}
 
-
-
-			<ul>
-				{{#each item}}
-					{{> food}}
-				{{/each}}
-			</ul>
+			<div class="feedList">
+				<a href={{addItem}}>
+					<div class="addItem_holder">
+						<div class="addItem_holderInside">
+								<div><i class="fa fa-plus-square-o fa-2x"></i></div>
+						</div>
+					<div class="textHolder">
+						<p class="TextForAddNew">Add New Item</p>
+					</div>
+				</div>
+				</a>
+				<ul>
+					{{#each item}}
+						{{> food}}
+					{{/each}}
+				</ul>
+			</div>
 
 			<footer>
-				<div id = "vegetarian" class = "filterOff">
-					vegetarian
-				</div>
-				<div id = "halal" class = "filterOff" >
-					halal
-				</div>
-				<div id = "price" class="filterOff">
-					price
+				<div class="bottomBar">
+					<div id="vegetarian" class = "filterOff">
+						<i class="fa fa-leaf fa-3x"></i><br>Vegetarian
+					</div>
+					<div id="halal" class = "filterOff" >
+						<i class="fa fa-moon-o fa-3x"></i><br>Halal
+					</div>
+					<div id="price" class="filterOff">
+						<i class="fa fa-money fa-3x"></i><br>Price
+					</div>
 				</div>
 			</footer>
 
@@ -55,12 +63,13 @@
 			<div>{{rating}}</div>
 			<div class="voteDown"><span class="glyphicon glyphicon-chevron-down"></span></div>
 		</div>
+		<a href={{detailedItem}}>
 		<div class="textHolder">
-			<a href={{detailedItem}}>
-				<p>{{name}}</p>
-			</a>
+			<p class="nameOfItem">
+				{{name}}</p>
 			<p class="priceOfItem">{{price}} AED</p>
 			<p class="descriptionOfItem">{{description}}</p>
 		</div>
+		</a>
 	</li>
 </template>
