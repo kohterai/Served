@@ -55,7 +55,8 @@ Template.addItem.events({
         price: event.target.price.value,
         category: event.target.category.value,
         halal: $("#halal").is(":checked"),
-        vegetarian: $("#vegetarian").is(":checked")
+        vegetarian: $("#vegetarian").is(":checked"),
+        rating: 0, 
     });
   
     event.target.name.value = " ";
