@@ -19,6 +19,11 @@ if (Meteor.isClient) {
     },
     backButton: function() {
       return "/" + Session.get("currentRestaurant").name
+    },
+    commentFind: function() {
+      console.log(this)
+      console.log(this._id)
+      return Comments.find({foodID: this._id})
     }
   });
 

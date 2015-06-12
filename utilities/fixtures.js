@@ -4,6 +4,7 @@ Meteor.methods({
     'fixtures': function() {
         Foods.remove({})
         Restaurants.remove({})
+        Comments.remove({})
         console.log("database dropped")
         for (i = 0; i < menuList.length; i++) {
             Foods.insert(menuList[i]);
@@ -11,6 +12,21 @@ Meteor.methods({
         for (i = 0; i < restaurantList.length; i++) {
             Restaurants.insert(restaurantList[i]);
         }
+        //We need the _id of the food so that we can put it in the appropiate comments field
+        foodIDen = Foods.findOne({name: "Murgh Chatpata Kabab"})._id;
+
+        Comments.insert({
+                foodID: foodIDen,
+                author: "Koh Terai",
+                date: new Date(),
+                comment: "This is one of the best dishes I've ever had in my life. Unfortunately my mother makes better food!"
+            })
+        Comments.insert({
+                foodID: foodIDen,
+                author: "Quan Vuong",
+                date: new Date(),
+                comment: "Ever since I had this dish, my life has changed. I see all dishes in a new light"
+            })
         console.log("fixtures inserted")
     }
 });
@@ -314,7 +330,7 @@ menuList = [{
     category: "main dish",
     filter: ["kabab", "chicken"],
     description: "This is a wonderful dish that combines teriyaki sauce and beautiful beautifl honey sauce.",
-    image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg"
+    image: "http://www.gazebo.ae/wp-content/uploads/2015/menu_images/murgh-chatpata-kabab.jpg"
     }, 
     { 
     restaurantID: 1,
@@ -1157,5 +1173,4 @@ menuList = [{
     image: "http://www.kingpitaandrice.com/wp-content/uploads/2013/11/king-pita-butter-chicken-oshawa-halal-.jpg",
     vegetarian: true
     }, 
-
 ]
