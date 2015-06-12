@@ -1,23 +1,31 @@
 <template name="addItem">
   <form class="new-food">
+
     <h1>
       <p class="text-center">Add New Menu Item </p>
     </h1>
-    <div class="form-group">
-      <input type="name" class="form-control"
-      id="inputFoodName" placeholder="Food Name">
-    </div>
+    <div class="center-block">
 
-    <div class="form-group">
-      <input type="Description" class="form-control"
-      id="inputDescription" placeholder="Description">
-    </div>
+      <div class="form-group">
+        <input type="name" class="form-control"
+        id="inputFoodName" placeholder="Food Name">
+      </div>
+      <br>
+      <div class="form-group">
+        <div class="col-xs-5">
+          <input type="price" class="form-control"
+          id="inputPrice" placeholder="Price">
+        </div>
+      </div>
+      <br>
 
-    <div class="form-group">
-      <input type="price" class="form-control"
-      id="inputPrice" placeholder="Price">
+      <div class="form-group">
+        <input type="Description" class="form-control"
+        id="inputDescription" placeholder="Description">
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <br>
     </div>
-
 
     <div class="checkbox">
        <label>
@@ -53,8 +61,8 @@
 
     <br>
     <br>
-
-    <input type="submit" value="Submit">
-
+    <div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
   </form>
 </template>
