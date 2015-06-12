@@ -1,6 +1,7 @@
 <head>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
 	<title>Served</title>
 </head>
 
@@ -10,7 +11,9 @@
 		<div class="row">
 
 			<h1>{{restaurantSelector}}</h1>
-			<a href={{addItem}}>+ add menu item</a>
+			<div class="addItem_holder">
+				<a href={{addItem}}>add menu item</a>
+			</div>
 			<ul>
 				{{#each item}}
 					{{> food}}
@@ -37,9 +40,9 @@
 	<li>
 		<a href={{detailedItem}}>{{name}}</a>
 		<div class="ratings">
-			<div class="voteUp">VOTEUP</div>
-			<div class="voteDown">VOTEDOWN</div>
+			<div class="voteUp"><span class="glyphicon glyphicon-chevron-up"></span></div>
 			{{rating}}
+			<div class="voteDown"><span class="glyphicon glyphicon-chevron-down"></span></div>
 		</div>
 		{{price}}
 	</li>
