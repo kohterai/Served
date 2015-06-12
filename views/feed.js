@@ -107,6 +107,7 @@ if (Meteor.isClient) {
       } else {
         Session.set("halal", true);
       };
+      
       div_tag = document.getElementById("halal");
 
       var current_class = div_tag.className;

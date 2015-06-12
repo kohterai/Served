@@ -16,8 +16,24 @@
 	<div>
 		{{description}}
 	</div>
-	<div>
-		<!-- {{#each comment}} -->
-
+	<div class="displayComments">
+		{{#each commentFind}}
+			<div>
+				{{author}}
+			</div>
+			<div>
+				{{comment}}
+			</div>
+		{{/each}}
 	</div>
+	{{#if currentUser}}
+		<form class="sendComment">
+			<h4>Submit a Comment</h4>
+			<textarea name="comments"></textarea>
+			<button>Submit Comment</button>
+		</form>
+	{{/if}}
+	
+
+
 </template>
