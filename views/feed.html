@@ -4,12 +4,11 @@
 	<title>Served</title>
 </head>
 
-
 <template name="feed">
+	{{> feedNearby}}
 	<div class="container-fluid">
 		<div class="row">
-
-			<h1>{{restaurantSelector}}</h1>
+			<h1 class="restaurantTitle">{{restaurantSelector}}</h1>
 			<a href={{addItem}}>+ add menu item</a>
 			<ul>
 				{{#each item}}
