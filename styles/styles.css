@@ -370,8 +370,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .dropDownList {
     margin-left: 16px;
-/*    margin-top: 7px;
-*/    margin-bottom: 18px;
+	margin-bottom: 18px;
     width:90%;
     white-space: nowrap;
     overflow: hidden;
@@ -381,10 +380,8 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     color: #e9ebe8;
-
 }
 
-}
 @-webkit-keyframes plate {
     from   {opacity: 0.6}
     to  {opacity: 1}
@@ -394,8 +391,6 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
     from   {opacity: 0.6}
     to  {opacity: 1}
 }
-
-
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes letterAni {
@@ -434,10 +429,6 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
     80%  {opacity: 0.4}
     100%  {opacity: 0.6}
 }
-
-
-
-
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes whaleAni {
