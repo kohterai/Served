@@ -277,6 +277,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 
 #homeScreen {
+	cursor: pointer;
 	height: 100%;
 	background-color: #ed8943;
 }
@@ -470,4 +471,11 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	font-family: Nunito;
 	margin-top: 10px;
 	width: 100%
+}
+
+#welcomeMessage {
+	font-family: Nunito;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
 }
