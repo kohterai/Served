@@ -7,8 +7,12 @@
 </head>
 
 <template name="addItem">
+<div class="topHeader">
+	<a href={{backButton}}><span class="backButton glyphicon glyphicon-menu-left"></span></a>
+	<h1 class="restaurantTitle">{{name}}</h1>
+</div>
 <div class="container-fluid">
-    <a href={{backButton}}>BACK</a>
+
     <form class="new-food">
 
       <h1>
