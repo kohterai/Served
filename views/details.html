@@ -13,33 +13,39 @@
 	</div>
 
 	<div class="add-item-box-inner">
-		<img src={{image}} />
+		<img src={{image}} alt="food-photo" class="img-thumbnail">
 
-		<p>
-			{{rating}}
-		</p>
-		<p>
-			{{price}} AED
-		</p>
-		<div>
-			Category: {{category}}
+		<div class="detail-row">
+			<ul>
+				<li>
+					<p class="nameOfItem"><strong>Rating:</strong> {{rating}}</p>
+				</li>
+				<li>
+					<p class="nameOfItem"><strong>Price:</strong> {{price}} AED</p>
+				</li>
+				<li>
+					<p class="nameOfItem"><strong>Category:</strong> {{category}}</p>
+				</li>
+				<li>
+					<p class="nameOfItem"><strong>Description:</strong> {{description}}</p>
+				</li>
+			</ul>
 		</div>
 
 
-		<div>
-			Description: {{description}}
-		</div>
 
-		<div class="displayComments">
-			{{#each commentFind}}
-				<div>
-					{{author}}
-				</div>
-				<div>
-					{{comment}}
-				</div>
-			{{/each}}
-		</div>
+					<p class="nameOfItem"><strong>Comments:</strong> <br></p>
+					<div class="displayComments">
+						{{#each commentFind}}
+							<blockquote>
+							<p>{{comment}}</p>
+							<footer>Posted by <cite title="Source Title">{{author}}</cite></footer>
+							</blockquote>
+						{{/each}}
+					</div>
+
+
+
 		{{#if currentUser}}
 			<form class="sendComment">
 				<h4>Submit a Comment</h4>
