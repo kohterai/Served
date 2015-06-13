@@ -278,6 +278,16 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	bottom: 0;
 }
 
+#SVGLogo2 {
+	width: 95%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
 #left-smoke {
 	opacity: 0.5;
 	-webkit-animation: whaleAni 5s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
@@ -432,4 +442,14 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
     50%  {opacity: 1}
     75%  {opacity: 0.4}
     100% {opacity: 0.1}
+}
+
+#emptyList {
+	text-align: center;
+	font-size: 2em;
+	z-index: 20;
+	position: absolute;
+	font-family: Nunito;
+	margin-top: 10px;
+	width: 100%
 }
