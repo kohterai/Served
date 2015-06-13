@@ -1,8 +1,10 @@
 /* CSS declarations go here */
 
+html {
+	background-color: rgba(233,235,232,0);
+}
 
 body {
-	background-color: #ffffff;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -91,13 +93,18 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	cursor: pointer;
 }
 
-.voteDown.clicked, .voteUp.clicked {
+.voteDown.clicked {
 	cursor: pointer;
-	color: #ffffff;
+	/*color: #ed8943;*/
+}
+
+.voteUp.clicked {
+	cursor: pointer;
+	color: #ed8943;
 }
 
 .container-fluid .row {
-	background-color:rgba(233,235,232,0.3);
+	background-color:rgba(233,235,232,0);
 	height:100%;
 }
 
@@ -109,6 +116,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .row ul {
 	list-style-type: none;
 	padding-left: 0;
+	padding-bottom: 50px;
 }
 
 .row ul li {
@@ -255,7 +263,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	padding: 76px 15px 0px 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(233,235,232,0.3);
+	background-color: rgba(233,235,232,0);
 }
 
 .add-item-box-inner img {
@@ -299,7 +307,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .newItemBg {
 	height:100%;
-	background-color: rgba(233,235,232,0.3);
+	background-color: rgba(233,235,232,0);
 }
 
 
@@ -400,7 +408,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .dropDownList {
     margin-left: 16px;
-	margin-bottom: 18px;
+		margin-bottom: 18px;
     width:90%;
     white-space: nowrap;
     overflow: hidden;
