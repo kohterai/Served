@@ -331,6 +331,31 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	-webkit-animation: plate 6s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
 }
 
+.dropdown {
+    cursor: pointer;
+    background-color: #ed8943;
+    z-index: 20;
+    width: 100%;
+    box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropDownList {
+    margin-left: 16px;
+/*    margin-top: 7px;
+*/    margin-bottom: 18px;
+    width:90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float:left;
+    display:inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: #e9ebe8;
+
+}
+
+}
 @-webkit-keyframes plate {
     from   {opacity: 0.6}
     to  {opacity: 1}

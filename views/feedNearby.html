@@ -1,13 +1,21 @@
 <template name="feedNearby">
-	<div id="dropDownMenu">
+	<div id="dropDownMenu" class="">
 
-		<h1>Nearby Restaurants!</h1>
+            <div class="container-fluid">
+                        <div style="    font-family: 'Nunito', sans-serif;     margin-left: 15px">
+		<h1 >Nearby Restaurants!</h1> 
+                        </div>
+
+
+                        <div style="margin-bottom:45px">
 		{{#each restaurantList}}
 			<div class="dropDownList menuToggler">
 
 				<a href="/{{name}}">{{name}}</a>
 			</div>
 		{{/each}}
+                        </div>
 	</div>
+            </div>
 
 </template>
