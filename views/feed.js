@@ -70,22 +70,29 @@ if (Meteor.isClient) {
 
   Template.feed.events({
 
-    'click .voteUp': function () {
+    'click .voteUp': function (event) {
       //Hack for changing arrow colors
-      if ($(".voteUp").hasClass("clicked")){
+      current_div = event.currentTarget 
+      if ($(current_div).hasClass("clicked")){
         return;
       } else {
-        $(".voteUp").addClass("clicked")
-        $(".voteDown").removeClass("clicked")
+        $(current_div).addClass("clicked")
+
+      $(current_div).siblings().removeClass("downVote clicked")
         Meteor.call("upVote", this);
       }
     },
-    'click .voteDown': function () {
-      if ($(".voteDown").hasClass("clicked")){
+
+    'click .voteDown': function (event) {
+
+      current_div = event.currentTarget 
+      if ($(current_div).hasClass("clicked")){
         return;
       } else {
-        $(".voteUp").removeClass("clicked")
-        $(".voteDown").addClass("clicked")    
+        $(current_div).addClass("clicked")    
+
+        $(current_div).siblings().removeClass("upVote clicked")
+
         Meteor.call("downVote", this);
       }
       

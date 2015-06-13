@@ -272,17 +272,166 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 #SVGLogo {
 	width: 95%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 #left-smoke {
+	opacity: 0.5;
+	-webkit-animation: whaleAni 5s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+#right-smoke {
+	opacity: 0.7;
+	-webkit-animation: whaleAniTwo 6s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+#center-smoke {
+	opacity: 0.2;
+	-webkit-animation: whaleAniThree 7s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
 
 }
-/*<<<<<<< HEAD
-=======
 
-p{
-	color: #ED6027;
-	font-family: 'Nunito', sans-serif;
-
+#s {
+	opacity: 1;
+	-webkit-animation: letterAni 4s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
 }
->>>>>>> d918e3fc97d388d490601a5b16ef45440ec56386*/
+
+#e {
+	opacity: 0.8;
+	-webkit-animation: letterAni2 4s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+
+#r {
+	opacity: 0.6;
+	-webkit-animation: letterAni 5s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+
+#v {
+	opacity: 0.4;
+	-webkit-animation: letterAni2 6s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+#e2 {
+	opacity: 0.6;
+	-webkit-animation: letterAni 3s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+#d {
+	opacity: 0.4;
+	-webkit-animation: letterAni2 4s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+#LogoPlate {
+	opacity: 0.6;
+	-webkit-animation: plate 6s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes plate {
+    from   {opacity: 0.6}
+    to  {opacity: 1}
+}
+
+@keyframes plate {
+    from   {opacity: 0.6}
+    to  {opacity: 1}
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes letterAni {
+    0%   {opacity: 1}
+    20%  {opacity: 0.8}
+    40%  {opacity: 0.6}
+    60%  {opacity: 0.4}
+    80%  {opacity: 0.6}
+    100%  {opacity: 0.8}
+}
+
+@keyframes letterAni {
+    0%   {opacity: 1}
+    20%  {opacity: 0.8}
+    40%  {opacity: 0.6}
+    60%  {opacity: 0.4}
+    80%  {opacity: 0.6}
+    100%  {opacity: 0.8}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes letterAni2 {
+    0%   {opacity: 0.8}
+    20%  {opacity: 0.6}
+    40%  {opacity: 0.4}
+    60%  {opacity: 0.2}
+    80%  {opacity: 0.4}
+    100%  {opacity: 0.6}
+}
+
+@keyframes letterAni2 {
+    0%   {opacity: 0.8}
+    20%  {opacity: 0.6}
+    40%  {opacity: 0.4}
+    60%  {opacity: 0.2}
+    80%  {opacity: 0.4}
+    100%  {opacity: 0.6}
+}
+
+
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes whaleAni {
+    0%   {opacity: 0.5}
+    25%  {opacity: 1.0;}
+    50%  {opacity: 0.5}
+    75%  {opacity: 0.1}
+    100% {opacity: 0.5}
+}
+
+@keyframes whaleAni {
+    0%   {opacity: 0.5}
+    25%  {opacity: 1.0;}
+    50%  {opacity: 0.5}
+    75%  {opacity: 0.1}
+    100% {opacity: 0.5}
+}
+
+@-webkit-keyframes whaleAniTwo {
+    0%   {opacity: 0.7}
+    25%  {opacity: 1.0;}
+    50%  {opacity: 0.6}
+    75%  {opacity: 0.1}
+    100% {opacity: 0.5}
+}
+
+@keyframes whaleAniTwo {
+    0%   {opacity: 0.7}
+    25%  {opacity: 0.2;}
+    50%  {opacity: 0.1}
+    75%  {opacity: 0.6}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes whaleAniThree {
+    0%   {opacity: 0.2}
+    25%  {opacity: 0.6;}
+    50%  {opacity: 1}
+    75%  {opacity: 0.4}
+    100% {opacity: 0.1}
+}
+
+@keyframes whaleAniThree {
+    0%   {opacity: 0.2}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 1}
+    75%  {opacity: 0.4}
+    100% {opacity: 0.1}
+}
