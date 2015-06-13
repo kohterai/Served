@@ -176,7 +176,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 }
 
 .restaurantTitle {
-	width:90%;
+	width:85%;
 	padding-right: 10px;
 	white-space: nowrap;
 	overflow: hidden;
@@ -308,8 +308,12 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .newItemBg {
 	height:100%;
 	background-color: rgba(233,235,232,0);
+
 }
 
+.newItemBg .container-fluid form {
+	margin-top: 70px;
+}
 
 
 
