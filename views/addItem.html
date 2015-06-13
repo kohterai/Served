@@ -7,6 +7,7 @@
 </head>
 
 <template name="addItem">
+  <div class="newItemBg">
 <div class="topHeader">
 	<a href={{backButton}}><span class="backButton glyphicon glyphicon-menu-left"></span></a>
 	<h1 class="restaurantTitle">{{name}}</h1>
@@ -44,12 +45,10 @@
          </div>
 
          <br>
-         <br>
 
          <div class="check-box">
             <input type="checkbox" name="halal"> Halal <br>
           </div>
-        <br>
         <br>
         <div class="input-field">
           <div class="submit-">
@@ -61,5 +60,6 @@
 
 
     </form>
+</div>
 </div>
 </template>

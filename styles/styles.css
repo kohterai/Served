@@ -98,6 +98,11 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 .container-fluid .row {
 	background-color:rgba(233,235,232,0.3);
+	height:100%;
+}
+
+.container-fluid {
+	height:100%;
 }
 
 
@@ -242,6 +247,7 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 .feedList {
 	margin-top: 65px;
 	padding-bottom:50px;
+	height:100%;
 }
 
 .add-item-box-inner {
@@ -289,6 +295,12 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	padding-left: 20px;
 }
 
+
+
+.newItemBg {
+	height:100%;
+	background-color: rgba(233,235,232,0.3);
+}
 
 
 
