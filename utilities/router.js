@@ -50,8 +50,6 @@ Router.route('/:_id/food/:foodName', function () {
 	}, {
     data: function () {
       //console.log(Restaurants.findOne({name: this.params._id}))
-      console.log(currentFood)
-      console.log("hereere")
       return currentFood
     }
   }
