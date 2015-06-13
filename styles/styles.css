@@ -270,15 +270,12 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 
 #SVGLogo {
 	width: 95%;
-<<<<<<< HEAD
 	position: absolute;
 	margin: auto;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-=======
->>>>>>> 34cca9b018e6a18f4612c1d3411b22ccb5c5ff64
 }
 
 #left-smoke {
