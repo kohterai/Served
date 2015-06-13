@@ -55,7 +55,7 @@ body {
 	font-size: 21px;
 	white-space: nowrap;
 	overflow: hidden;
-  	text-overflow: ellipsis;
+  text-overflow: ellipsis;
 	margin-bottom: 0;
 }
 
@@ -259,6 +259,22 @@ span.glyphicon-chevron-up, span.glyphicon-chevron-down {
 	margin-bottom:5px;
 	margin-top:5px;
 }
+
+
+
+.backButton {
+	margin-top: 18px;
+	color: #e9ebe8;
+	font-size: 24px;
+	float:left;
+	padding: 0 0 0 15px;
+}
+
+
+
+
+
+
 
 #homeScreen {
 	height: 100%;
