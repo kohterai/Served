@@ -13,7 +13,13 @@ if (Meteor.isClient) {
     	console.log(Restaurants.find({}))
 			return Restaurants.find({});
 	  }
-	})
+	});
+
+  Template.home.events({
+    "click #homeScreen": function () {
+      window.location.href = '/Gazebo';
+    }
+  });
 }
 
 if (Meteor.isServer) {
